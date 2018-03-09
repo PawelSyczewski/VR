@@ -1,12 +1,15 @@
-﻿Log file open, 02/22/18 22:03:38
-LogWindows: LoadLibraryWithSearchPaths failed for file aqProf.dll. GetLastError=0
-LogWindows: LoadLibraryWithSearchPaths failed for file VtuneApi.dll. GetLastError=0
-LogWindows: LoadLibraryWithSearchPaths failed for file VtuneApi32e.dll. GetLastError=0
+﻿Log file open, 03/09/18 23:06:59
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: VRProject
 LogPlatformFile: Not using cached read wrapper
-LogInit: Display: RandInit(1630619907) SRandInit(1630619907).
+LogInit: Display: RandInit(-321780444) SRandInit(-321780444).
 LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.231975
+LogStats: Stats thread started at 0.157138
 LogD3D11RHI: Aftermath initialized
 LogPluginManager: Mounting plugin Paper2D
 LogPluginManager: Mounting plugin LightPropagationVolume
@@ -78,8 +81,8 @@ LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
 LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
 LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
 LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-LogInit: Build: ++UE4+Release-4.17-CL-3586342
-LogInit: Engine Version: 4.17.1-3586342+++UE4+Release-4.17
+LogInit: Build: ++UE4+Release-4.17-CL-3658906
+LogInit: Engine Version: 4.17.2-3658906+++UE4+Release-4.17
 LogInit: Compatible Engine Version: 4.17.0-3573198+++UE4+Release-4.17
 LogInit: Net CL: 3573198
 LogDevObjectVersion: Number of dev versions registered: 16
@@ -99,1227 +102,274 @@ LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
 LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
 LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
 LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 7
-LogInit: Compiled (64-bit): Aug 15 2017 02:05:26
+LogInit: Compiled (64-bit): Sep 22 2017 13:47:16
 LogInit: Compiled with Visual C++: 19.00.24215.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.17
-LogInit: Command line: -EpicPortal 
-LogInit: Base directory: G:/Programy/UE_4.17/Engine/Binaries/Win64/
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2018.02.22-21.03.39:639][  0]LogInit: Selected Device Profile: [Windows]
-[2018.02.22-21.03.39:639][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2018.02.22-21.03.39:650][  0]LogInit: Computer: ZBAJSZEK
-[2018.02.22-21.03.39:650][  0]LogInit: User: Zbajchu
-[2018.02.22-21.03.39:650][  0]LogInit: CPU Page size=4096, Cores=4
-[2018.02.22-21.03.39:650][  0]LogInit: High frequency timer resolution =3.027366 MHz
-[2018.02.22-21.03.39:650][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
-[2018.02.22-21.03.39:650][  0]LogMemory: Platform Memory Stats for Windows
-[2018.02.22-21.03.39:650][  0]LogMemory: Process Physical Memory: 281.11 MB used, 281.11 MB peak
-[2018.02.22-21.03.39:650][  0]LogMemory: Process Virtual Memory: 275.51 MB used, 275.51 MB peak
-[2018.02.22-21.03.39:650][  0]LogMemory: Physical Memory: 5271.85 MB used,  2869.79 MB free, 8141.63 MB total
-[2018.02.22-21.03.39:650][  0]LogMemory: Virtual Memory: 693.76 MB used,  2869.79 MB free, 134217728.00 MB total
-[2018.02.22-21.03.39:833][  0]LogInit: Using OS detected language (pl-PL).
-[2018.02.22-21.03.39:833][  0]LogInit: Using OS detected locale (pl-PL).
-[2018.02.22-21.03.39:837][  0]LogTextLocalizationManager: No localization for 'pl-PL' exists, so 'en' will be used for the language.
-[2018.02.22-21.03.39:837][  0]LogTextLocalizationManager: No localization for 'pl-PL' exists, so 'en' will be used for the locale.
-[2018.02.22-21.03.40:586][  0]LogD3D11RHI: D3D11 adapters:
-[2018.02.22-21.03.40:639][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
-[2018.02.22-21.03.40:639][  0]LogD3D11RHI:       4043/0/4070 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2018.02.22-21.03.40:642][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2018.02.22-21.03.40:642][  0]LogD3D11RHI:       0/0/4070 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2018.02.22-21.03.40:642][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2018.02.22-21.03.40:648][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2018.02.22-21.03.40:649][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
-[2018.02.22-21.03.40:649][  0]LogWindows: EnumDisplayDevices:
-[2018.02.22-21.03.40:649][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
-[2018.02.22-21.03.40:649][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
-[2018.02.22-21.03.40:649][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2018.02.22-21.03.40:649][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2018.02.22-21.03.40:649][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
-[2018.02.22-21.03.40:649][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
-[2018.02.22-21.03.40:649][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
-[2018.02.22-21.03.40:649][  0]LogD3D11RHI:      Driver Date: Unknown
-[2018.02.22-21.03.40:650][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2018.02.22-21.03.40:681][  0]LogD3D11RHI: Async texture creation enabled
-[2018.02.22-21.03.40:701][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2018.02.22-21.03.40:753][  0]LogShaderCompilers: Guid format shader working directory is 12 characters bigger than the processId version (C:/Users/Zbajchu/Documents/GitHub/VR/Intermediate/Shaders/WorkingDirectory/9096/).
-[2018.02.22-21.03.40:753][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Zbajchu/AppData/Local/Temp/UnrealShaderWorkingDir/C6FCAF0D40B4CE4013F669BE88FCC6AE/'.
-[2018.02.22-21.03.40:753][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2018.02.22-21.03.41:769][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2018.02.22-21.03.41:825][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2018.02.22-21.03.41:882][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2018.02.22-21.03.41:961][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2018.02.22-21.03.42:037][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2018.02.22-21.03.42:094][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2018.02.22-21.03.42:150][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2018.02.22-21.03.42:207][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2018.02.22-21.03.42:255][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2018.02.22-21.03.42:319][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.02.22-21.03.42:374][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
-[2018.02.22-21.03.42:430][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
-[2018.02.22-21.03.42:485][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
-[2018.02.22-21.03.42:554][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
-[2018.02.22-21.03.42:610][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
-[2018.02.22-21.03.42:722][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
-[2018.02.22-21.03.42:722][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
-[2018.02.22-21.03.42:765][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2018.02.22-21.03.42:865][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.02.22-21.03.42:898][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.02.22-21.03.42:954][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2018.02.22-21.03.43:011][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2018.02.22-21.03.43:065][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2018.02.22-21.03.43:120][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2018.02.22-21.03.43:120][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2018.02.22-21.03.43:625][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2018.02.22-21.03.43:744][  0]LogDerivedDataCache: Loaded boot cache 0.12s 106MB C:/Users/Zbajchu/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
-[2018.02.22-21.03.43:744][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Zbajchu/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc
-[2018.02.22-21.03.43:745][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/Zbajchu/Documents/GitHub/VR/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2018.02.22-21.03.43:745][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2018.02.22-21.03.43:745][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/Zbajchu/Documents/GitHub/VR/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.02.22-21.03.43:745][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2018.02.22-21.03.43:761][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2018.02.22-21.03.43:774][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Zbajchu/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2018.02.22-21.03.43:785][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2018.02.22-21.03.43:786][  0]LogSlate: Using Freetype 2.6.0
-[2018.02.22-21.03.43:786][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.02.22-21.03.43:787][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.02.22-21.03.44:110][  0]LogAssetRegistry: FAssetRegistry took 0.0275 seconds to start up
-[2018.02.22-21.03.44:239][  0]LogInit: Selected Device Profile: [Windows]
-[2018.02.22-21.03.44:390][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2018.02.22-21.03.44:733][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2018.02.22-21.03.44:776][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2018.02.22-21.03.44:776][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2018.02.22-21.03.44:776][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2018.02.22-21.03.44:776][  0]LogMeshReduction: No automatic mesh merging module available
-[2018.02.22-21.03.44:776][  0]LogMeshMerging: No automatic mesh merging module available
-[2018.02.22-21.03.45:196][  0]LogNetVersion: VRProject , NetCL: 3573198, EngineNetVer: 2, GameNetVer: 0 (Checksum: 2701897489)
-[2018.02.22-21.03.45:422][  0]LogPackageLocalizationCache: Processed 5 localized package path(s) for 1 prioritized culture(s) in 0.027251 seconds
-[2018.02.22-21.03.45:429][  0]LogUObjectArray: 35825 objects as part of root set at end of initial load.
-[2018.02.22-21.03.45:429][  0]LogUObjectAllocator: 7529112 out of 0 bytes used by permanent object pool.
-[2018.02.22-21.03.45:429][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.02.22-21.03.45:494][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2018.02.22-21.03.48:294][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2018.02.22-21.03.48:336][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2018.02.22-21.03.49:438][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2018.02.22-21.03.49:874][  0]SourceControl: Source control is disabled
-[2018.02.22-21.03.49:874][  0]SourceControl: Source control is disabled
-[2018.02.22-21.03.49:929][  0]SourceControl: Source control is disabled
-[2018.02.22-21.03.49:979][  0]SourceControl: Source control is disabled
-[2018.02.22-21.03.50:585][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2018.02.22-21.03.50:843][  0]LogOcInput: OculusInput pre-init called
-[2018.02.22-21.03.51:116][  0]LogEngine: Initializing Engine...
-[2018.02.22-21.03.51:118][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.02.22-21.03.51:354][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.02.22-21.03.51:354][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.02.22-21.03.51:501][  0]LogAIModule: Creating AISystem for world Untitled
-[2018.02.22-21.03.51:540][  0]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.02.22-21.03.51:563][  0]LogInit: FAudioDevice initialized.
-[2018.02.22-21.03.51:669][  0]LogDerivedDataCache: Saved boot cache 0.11s 106MB C:/Users/Zbajchu/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
-[2018.02.22-21.03.51:686][  0]LogInit: Texture streaming: Enabled
-[2018.02.22-21.03.51:808][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2018.02.22-21.03.52:103][  0]LogInit: Transaction tracking system initialized
-[2018.02.22-21.03.52:432][  0]BlueprintLog: New page: Editor Load
-[2018.02.22-21.03.53:388][  0]LocalizationService: Localization service is disabled
-[2018.02.22-21.03.54:131][  0]LogConsoleResponse: Display: 
-[2018.02.22-21.03.54:423][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2018.02.22-21.03.54:423][  0]LogCook: Display: Mobile HDR setting 1
-[2018.02.22-21.03.54:423][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2018.02.22-21.03.54:429][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Zbajchu/Documents/GitHub/VR/Content/' took 0.02s
-[2018.02.22-21.03.55:533][  0]SourceControl: Source control is disabled
-[2018.02.22-21.03.55:533][  0]Cmd: MAP LOAD FILE="C:/Users/Zbajchu/Documents/GitHub/VR/Content/VRProject.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2018.02.22-21.03.55:539][  0]LightingResults: New page: Lighting Build
-[2018.02.22-21.03.55:581][  0]MapCheck: New page: Map Check
-[2018.02.22-21.03.55:581][  0]LightingResults: New page: Lighting Build
-[2018.02.22-21.03.58:501][  0]LogAIModule: Creating AISystem for world VRProject
-[2018.02.22-21.03.58:797][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2018.02.22-21.03.58:834][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2018.02.22-21.03.58:930][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 95.918ms to complete.
-[2018.02.22-21.03.58:930][  0]LogFileHelpers: Loading map 'VRProject' took 3.397
-[2018.02.22-21.03.59:008][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.02.22-21.03.59:854][  0]LogCollectionManager: Loaded 0 collections in 0.001462 seconds
-[2018.02.22-21.04.00:030][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Collections/' took 0.01s
-[2018.02.22-21.04.00:030][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Zbajchu/Documents/GitHub/VR/Content/Developers/Zbajchu/Collections/' took 0.01s
-[2018.02.22-21.04.00:030][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Zbajchu/Documents/GitHub/VR/Content/Collections/' took 0.01s
-[2018.02.22-21.04.00:030][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
-[2018.02.22-21.04.00:048][  0]LogContentBrowser: Native class hierarchy populated in 0.0145 seconds. Added 2386 classes and 500 folders.
-[2018.02.22-21.04.00:229][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0007 seconds. Added 0 classes and 0 folders.
-[2018.02.22-21.04.00:710][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0007 seconds. Added 0 classes and 0 folders.
-[2018.02.22-21.04.00:829][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
-[2018.02.22-21.04.01:845][  0]LogSlate: Took 0.000313 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.02.22-21.04.01:849][  0]LogSlate: Took 0.000296 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2018.02.22-21.04.01:938][  0]LogSlate: Took 0.016501 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2018.02.22-21.04.02:451][  0]LogRenderer: Reallocating scene render targets to support 1208x576 Format 26 NumSamples 1 (Frame:1).
-[2018.02.22-21.04.03:211][  0]LogSlate: Took 0.009071 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2018.02.22-21.04.03:475][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
-[2018.02.22-21.04.03:475][  0]LogLoad: (Engine Initialization) Total time: 25.63 seconds
-[2018.02.22-21.04.03:475][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2018.02.22-21.04.03:475][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2018.02.22-21.04.03:475][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2018.02.22-21.04.03:533][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2018.02.22-21.04.03:942][  2]LogAssetRegistry: Asset discovery search completed in 19.8548 seconds
-[2018.02.22-21.04.03:944][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2018.02.22-21.04.03:944][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000056 seconds (updated 0 objects)
-[2018.02.22-21.05.31:319][104]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (szafka9)
-[2018.02.22-21.05.31:802][104]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Cube30)
-[2018.02.22-21.05.33:374][188]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube4)
-[2018.02.22-21.06.02:589][308]LogEditorViewport: Clicking on Actor (LMB): SkyLight (SkyLight)
-[2018.02.22-21.06.03:607][416]LogEditorViewport: Clicking on Actor (LMB): SkyLight (SkyLight)
-[2018.02.22-21.06.03:846][437]Cmd: DELETE
-[2018.02.22-21.06.03:846][437]Cmd: ACTOR DELETE
-[2018.02.22-21.06.04:041][437]LogEditorActor: Deleted Actor: SkyLight
-[2018.02.22-21.06.04:062][437]LogEditorActor: Deleted 1 Actors (0.051 secs)
-[2018.02.22-21.06.13:374][473]Cmd: DELETE
-[2018.02.22-21.06.13:374][473]Cmd: ACTOR DELETE
-[2018.02.22-21.06.13:376][473]LogEditorActor: Deleted Actor: SpotLight
-[2018.02.22-21.06.13:386][473]LogEditorActor: Deleted 1 Actors (0.011 secs)
-[2018.02.22-21.06.20:325][246]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (DirectionalLight)
-[2018.02.22-21.08.08:380][850]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube52)
-[2018.02.22-21.08.30:329][193]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube36)
-[2018.02.22-21.09.11:556][596]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube36)
-[2018.02.22-21.09.27:754][262]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube19)
-[2018.02.22-21.09.36:598][171]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube18)
-[2018.02.22-21.09.47:859][368]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (DirectionalLight)
-[2018.02.22-21.10.34:843][ 91]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube18)
-[2018.02.22-21.11.04:862][320]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube20)
-[2018.02.22-21.11.19:834][879]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor7)
-[2018.02.22-21.11.21:185][ 25]Cmd: EDIT COPY
-[2018.02.22-21.11.21:704][ 55]Cmd: EDIT PASTE
-[2018.02.22-21.11.32:372][220]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (DirectionalLight)
-[2018.02.22-21.11.36:718][663]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor8)
-[2018.02.22-21.13.49:874][ 95]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (DirectionalLight)
-[2018.02.22-21.14.48:509][400]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor8)
-[2018.02.22-21.15.00:408][679]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix3)
-[2018.02.22-21.15.01:372][777]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix4)
-[2018.02.22-21.15.05:386][219]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix3)
-[2018.02.22-21.15.12:413][981]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor8)
-[2018.02.22-21.15.35:582][482]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor8)
-[2018.02.22-21.15.46:927][693]LogEditorViewport: Clicking on Actor (LMB): SlideDoor_C (SlideDoor)
-[2018.02.22-21.16.37:260][398]LogEditorViewport: Clicking on Actor (LMB): Collectible_C (Necronomicon)
-[2018.02.22-21.17.46:248][169]LogEditorViewport: Clicking on Actor (LMB): SlideDoor_C (SlideDoor)
-[2018.02.22-21.17.47:663][322]LogEditorViewport: Clicking on Actor (LMB): SlideDoor_C (SlideDoor)
-[2018.02.22-21.17.52:565][870]LogEditorViewport: Clicking on Actor (LMB): SlideDoor_C (SlideDoor)
-[2018.02.22-21.17.52:698][877]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
-[2018.02.22-21.17.57:867][455]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
-[2018.02.22-21.17.58:704][547]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
-[2018.02.22-21.18.14:794][705]LogSlate: Took 0.000256 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2018.02.22-21.18.21:580][ 36]LogEditorViewport: Clicking on Actor (LMB): Collectible_C (Necronomicon)
-[2018.02.22-21.18.31:642][ 23]LogEditorViewport: Clicking on Actor (LMB): SlideDoor_C (SlideDoor)
-[2018.02.22-21.18.32:487][101]LogSlate: Took 0.000209 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2018.02.22-21.18.32:643][101]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
-[2018.02.22-21.18.33:447][101]LogSavePackage: Save=693.83ms
-[2018.02.22-21.18.33:447][101]LogSavePackage: Moving 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/VRProject_Auto1B846FD99412C94430C4345A61EB9D854.tmp' to 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto1.umap'
-[2018.02.22-21.18.33:451][101]LogSavePackage: Display: Finished SavePackage C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto1.umap
-[2018.02.22-21.18.33:465][101]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VRProject' took 0.925
-[2018.02.22-21.18.33:465][101]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.925
-[2018.02.22-21.18.43:580][170]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor8)
-[2018.02.22-21.18.53:954][273]LogEditorViewport: Clicking on Actor (LMB): SlideDoor_C (SlideDoor)
-[2018.02.22-21.18.55:741][461]LogEditorViewport: Clicking on Actor (LMB): Collectible_C (Necronomicon)
-[2018.02.22-21.18.57:632][655]LogEditorViewport: Clicking on Actor (LMB): SlideDoor_C (SlideDoor)
-[2018.02.22-21.19.08:064][747]LogEditorViewport: Clicking on Actor (LMB): Collectible_C (Necronomicon)
-[2018.02.22-21.19.22:327][255]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_DoorFrame10)
-[2018.02.22-21.19.43:175][443]LogEditorViewport: Clicking on Actor (LMB): SlideDoor_C (SlideDoor)
-[2018.02.22-21.19.46:296][782]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_DoorFrame10)
-[2018.02.22-21.20.08:071][140]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube37)
-[2018.02.22-21.20.44:777][929]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube35)
-[2018.02.22-21.20.48:339][315]Cmd: DELETE
-[2018.02.22-21.20.48:339][315]Cmd: ACTOR DELETE
-[2018.02.22-21.20.48:340][315]LogEditorActor: Deleted Actor: StaticMeshActor
-[2018.02.22-21.20.48:353][315]LogEditorActor: Deleted 1 Actors (0.014 secs)
-[2018.02.22-21.20.49:283][425]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube16)
-[2018.02.22-21.20.50:718][579]Cmd: DELETE
-[2018.02.22-21.20.50:718][579]Cmd: ACTOR DELETE
-[2018.02.22-21.20.50:719][579]LogEditorActor: Deleted Actor: StaticMeshActor
-[2018.02.22-21.20.50:729][579]LogEditorActor: Deleted 1 Actors (0.011 secs)
-[2018.02.22-21.20.59:091][578]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube17)
-[2018.02.22-21.21.01:113][795]Cmd: EDIT COPY
-[2018.02.22-21.21.02:035][897]Cmd: EDIT PASTE
-[2018.02.22-21.21.16:014][328]LogSlate: Took 0.018572 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2018.02.22-21.22.32:839][721]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix6)
-[2018.02.22-21.22.36:564][116]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix5)
-[2018.02.22-21.23.03:689][206]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube35)
-[2018.02.22-21.24.10:551][343]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube14)
-[2018.02.22-21.24.14:442][734]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (szafka8)
-[2018.02.22-21.25.02:748][489]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube35)
-[2018.02.22-21.26.56:352][609]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor7)
-[2018.02.22-21.27.03:070][357]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube35)
-[2018.02.22-21.27.27:429][ 41]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube37)
-[2018.02.22-21.28.05:117][132]LogEditorViewport: Clicking Background
-[2018.02.22-21.28.05:284][148]LogEditorViewport: Clicking Background
-[2018.02.22-21.28.06:431][284]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube37)
-[2018.02.22-21.28.49:497][959]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube33)
-[2018.02.22-21.28.52:999][296]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube33)
-[2018.02.22-21.30.22:423][760]Cmd: EDIT COPY
-[2018.02.22-21.30.22:782][799]Cmd: EDIT PASTE
-[2018.02.22-21.30.33:981][973]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube37)
-[2018.02.22-21.31.21:073][ 23]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube35)
-[2018.02.22-21.31.26:082][570]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube35)
-[2018.02.22-21.31.44:754][551]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube59)
-[2018.02.22-21.32.13:109][583]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube59)
-[2018.02.22-21.33.17:839][828]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto2.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
-[2018.02.22-21.33.18:674][828]LogSavePackage: Save=756.27ms
-[2018.02.22-21.33.18:674][828]LogSavePackage: Moving 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/VRProject_Auto2DA68FD4E4D2B002CDB6CD9B49EB7394B.tmp' to 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto2.umap'
-[2018.02.22-21.33.18:678][828]LogSavePackage: Display: Finished SavePackage C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto2.umap
-[2018.02.22-21.33.18:680][828]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VRProject' took 0.863
-[2018.02.22-21.33.18:680][828]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.863
-[2018.02.22-21.36.38:853][629]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube34)
-[2018.02.22-21.36.44:533][204]LogEditorViewport: Clicking Background
-[2018.02.22-21.36.45:507][316]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube34)
-[2018.02.22-21.37.15:267][550]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube20)
-[2018.02.22-21.37.42:728][457]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor8)
-[2018.02.22-21.37.57:515][ 82]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor8)
-[2018.02.22-21.39.51:888][ 75]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube35)
-[2018.02.22-21.40.14:307][557]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube21)
-[2018.02.22-21.41.11:629][784]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube21)
-[2018.02.22-21.43.19:209][599]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto3.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
-[2018.02.22-21.43.19:889][599]LogSavePackage: Save=607.89ms
-[2018.02.22-21.43.19:889][599]LogSavePackage: Moving 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/VRProject_Auto35502650644C499250CA06F8059C9BFB8.tmp' to 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto3.umap'
-[2018.02.22-21.43.19:893][599]LogSavePackage: Display: Finished SavePackage C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto3.umap
-[2018.02.22-21.43.19:895][599]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VRProject' took 0.703
-[2018.02.22-21.43.19:895][599]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.703
-[2018.02.22-21.45.01:609][718]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube35)
-[2018.02.22-21.45.02:922][860]Cmd: EDIT COPY
-[2018.02.22-21.45.03:391][913]Cmd: EDIT PASTE
-[2018.02.22-21.46.19:443][ 77]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor6)
-[2018.02.22-21.46.20:588][200]Cmd: EDIT COPY
-[2018.02.22-21.46.20:906][235]Cmd: EDIT PASTE
-[2018.02.22-21.46.42:252][555]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor7)
-[2018.02.22-21.46.43:398][680]Cmd: EDIT COPY
-[2018.02.22-21.46.43:795][725]Cmd: EDIT PASTE
-[2018.02.22-21.47.02:155][776]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube37)
-[2018.02.22-21.47.10:012][606]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix3)
-[2018.02.22-21.47.22:051][962]Cmd: EDIT COPY
-[2018.02.22-21.47.22:481][ 10]Cmd: EDIT PASTE
-[2018.02.22-21.47.44:675][453]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix2)
-[2018.02.22-21.47.47:221][735]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix)
-[2018.02.22-21.47.50:108][ 56]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka1Fix)
-[2018.02.22-21.47.56:536][745]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix4)
-[2018.02.22-21.47.59:947][115]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix3)
-[2018.02.22-21.48.10:047][200]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix4)
-[2018.02.22-21.48.14:638][697]Cmd: EDIT COPY
-[2018.02.22-21.48.14:985][736]Cmd: EDIT PASTE
-[2018.02.22-21.48.30:389][466]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix4)
-[2018.02.22-21.48.41:896][735]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix8)
-[2018.02.22-21.48.51:921][809]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix8)
-[2018.02.22-21.48.52:706][896]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix4)
-[2018.02.22-21.49.11:291][898]EditorErrors: Warning: 
-[2018.02.22-21.49.15:444][303]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix3)
-[2018.02.22-21.49.27:268][644]Cmd: EDIT COPY
-[2018.02.22-21.49.27:574][676]Cmd: EDIT PASTE
-[2018.02.22-21.50.21:192][558]LogEditorViewport: Clicking on Actor (LMB): Door_C (DoorBiblioteczka)
-[2018.02.22-21.50.49:341][743]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Symbol4)
-[2018.02.22-21.50.54:719][281]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Cube22)
-[2018.02.22-21.50.56:099][429]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Symbol4)
-[2018.02.22-21.51.00:434][910]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube13)
-[2018.02.22-21.51.01:672][ 42]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Symbol4)
-[2018.02.22-21.52.16:005][532]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube18)
-[2018.02.22-21.52.40:224][151]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube18)
-[2018.02.22-21.53.14:259][790]LogEditorViewport: Clicking Background
-[2018.02.22-21.53.17:813][200]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube18)
-[2018.02.22-21.53.56:596][502]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube22)
-[2018.02.22-21.54.33:497][673]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (torch28)
-[2018.02.22-21.54.43:236][720]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (torch27)
-[2018.02.22-21.55.52:333][573]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto4.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
-[2018.02.22-21.55.52:998][573]LogSavePackage: Save=598.01ms
-[2018.02.22-21.55.52:998][573]LogSavePackage: Moving 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/VRProject_Auto4B3737CCD486FDA40C85CA493F78E2FF2.tmp' to 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto4.umap'
-[2018.02.22-21.55.53:002][573]LogSavePackage: Display: Finished SavePackage C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto4.umap
-[2018.02.22-21.55.53:004][573]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VRProject' took 0.702
-[2018.02.22-21.55.53:004][573]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.702
-[2018.02.22-21.56.32:669][969]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (torch28)
-[2018.02.22-21.56.42:303][ 12]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (torch27)
-[2018.02.22-21.57.48:801][533]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube36)
-[2018.02.22-21.59.05:080][175]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_DoorFrame10)
-[2018.02.22-21.59.06:335][310]Cmd: EDIT COPY
-[2018.02.22-21.59.07:321][422]Cmd: EDIT PASTE
-[2018.02.22-22.00.51:969][743]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor10)
-[2018.02.22-22.01.33:214][252]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (skrzyniaBase)
-[2018.02.22-22.01.56:017][850]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_DoorFrame14)
-[2018.02.22-22.02.47:556][856]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube36)
-[2018.02.22-22.03.16:031][890]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube36)
-[2018.02.22-22.03.16:342][920]Cmd: EDIT COPY
-[2018.02.22-22.03.16:723][960]Cmd: EDIT PASTE
-[2018.02.22-22.04.38:707][861]Cmd: EDIT COPY
-[2018.02.22-22.04.38:991][891]Cmd: EDIT PASTE
-[2018.02.22-22.05.00:321][195]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube62)
-[2018.02.22-22.05.24:919][906]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Cube62)
-[2018.02.22-22.05.57:663][ 60]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto5.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
-[2018.02.22-22.05.58:336][ 60]LogSavePackage: Save=603.47ms
-[2018.02.22-22.05.58:336][ 60]LogSavePackage: Moving 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/VRProject_Auto5168E95E84A05F7F84345ECB8B47BD431.tmp' to 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto5.umap'
-[2018.02.22-22.05.58:340][ 60]LogSavePackage: Display: Finished SavePackage C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto5.umap
-[2018.02.22-22.05.58:342][ 60]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VRProject' took 0.711
-[2018.02.22-22.05.58:342][ 60]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.711
-[2018.02.22-22.11.11:090][218]LogEditorViewport: Clicking on Actor (LMB): RotationLock_C (RotationLock)
-[2018.02.22-22.12.42:497][385]LogEditorViewport: Clicking on Actor (context menu): Door_C (DoorBiblioteczka)
-[2018.02.22-22.12.44:115][525]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Cube13)
-[2018.02.22-22.12.45:014][608]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube13)
-[2018.02.22-22.13.04:108][600]LogEditorViewport: Clicking on Actor (LMB): Door_C (DoorBiblioteczka)
-[2018.02.22-22.13.07:174][929]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (szafka13)
-[2018.02.22-22.13.30:068][833]LogEditorViewport: Clicking on Actor (LMB): RotationLock_C (RotationLock)
-[2018.02.22-22.14.56:864][154]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor9)
-[2018.02.22-22.14.59:319][381]LogEditorViewport: Clicking on Actor (LMB): RotationLock_C (RotationLock)
-[2018.02.22-22.15.23:125][949]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Door9)
-[2018.02.22-22.15.24:272][ 69]Cmd: EDIT COPY
-[2018.02.22-22.15.24:664][113]Cmd: EDIT PASTE
-[2018.02.22-22.15.45:144][236]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Door4)
-[2018.02.22-22.15.46:089][333]Cmd: DELETE
-[2018.02.22-22.15.46:089][333]Cmd: ACTOR DELETE
-[2018.02.22-22.15.46:090][333]LogEditorActor: Deleted Actor: StaticMeshActor
-[2018.02.22-22.15.46:115][333]LogEditorActor: Deleted 1 Actors (0.025 secs)
-[2018.02.22-22.15.46:986][436]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_DoorFrame4)
-[2018.02.22-22.15.47:264][459]Cmd: DELETE
-[2018.02.22-22.15.47:264][459]Cmd: ACTOR DELETE
-[2018.02.22-22.15.47:265][459]LogEditorActor: Deleted Actor: StaticMeshActor
-[2018.02.22-22.15.47:276][459]LogEditorActor: Deleted 1 Actors (0.011 secs)
-[2018.02.22-22.16.29:050][425]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light79)
-[2018.02.22-22.16.30:635][572]Cmd: EDIT COPY
-[2018.02.22-22.16.30:913][601]Cmd: EDIT PASTE
-[2018.02.22-22.16.43:078][759]Cmd: EDIT COPY
-[2018.02.22-22.16.43:376][791]Cmd: EDIT PASTE
-[2018.02.22-22.16.47:411][218]Cmd: EDIT PASTE
-[2018.02.22-22.16.53:420][848]Cmd: EDIT PASTE
-[2018.02.22-22.17.01:022][576]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light81)
-[2018.02.22-22.17.01:888][668]Cmd: EDIT COPY
-[2018.02.22-22.17.02:165][697]Cmd: EDIT PASTE
-[2018.02.22-22.17.18:138][456]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_DoorFrame13)
-[2018.02.22-22.17.18:681][509]Cmd: EDIT COPY
-[2018.02.22-22.17.19:108][556]Cmd: EDIT PASTE
-[2018.02.22-22.18.00:051][149]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto6.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
-[2018.02.22-22.18.00:786][149]LogSavePackage: Save=660.34ms
-[2018.02.22-22.18.00:786][149]LogSavePackage: Moving 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/VRProject_Auto608EA7DA44EBD2389BBB537B0175536D5.tmp' to 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto6.umap'
-[2018.02.22-22.18.00:789][149]LogSavePackage: Display: Finished SavePackage C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto6.umap
-[2018.02.22-22.18.00:791][149]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VRProject' took 0.760
-[2018.02.22-22.18.00:791][149]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.760
-[2018.02.22-22.19.20:358][  8]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube19)
-[2018.02.22-22.19.21:191][ 91]Cmd: EDIT COPY
-[2018.02.22-22.19.21:510][125]Cmd: EDIT PASTE
-[2018.02.22-22.20.06:789][867]LogEditorViewport: Clicking Background
-[2018.02.22-22.20.07:586][960]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube63)
-[2018.02.22-22.20.28:526][169]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube63)
-[2018.02.22-22.20.29:295][252]Cmd: EDIT COPY
-[2018.02.22-22.20.29:650][292]Cmd: EDIT PASTE
-[2018.02.22-22.21.29:132][744]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light79)
-[2018.02.22-22.21.29:898][822]Cmd: EDIT COPY
-[2018.02.22-22.21.30:237][858]Cmd: EDIT PASTE
-[2018.02.22-22.21.40:634][947]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube23)
-[2018.02.22-22.21.43:954][269]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (torch19)
-[2018.02.22-22.22.02:218][367]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (torch20)
-[2018.02.22-22.22.13:313][607]Cmd: EDIT COPY
-[2018.02.22-22.22.14:507][745]Cmd: EDIT PASTE
-[2018.02.22-22.22.57:260][410]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (polka2Fix5)
-[2018.02.22-22.23.09:061][696]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light89)
-[2018.02.22-22.23.26:598][481]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light88)
-[2018.02.22-22.23.31:698][987]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light87)
-[2018.02.22-22.23.40:639][969]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light88)
-[2018.02.22-22.23.43:395][265]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light89)
-[2018.02.22-22.23.50:365][ 19]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light87)
-[2018.02.22-22.24.10:398][159]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (torch30)
-[2018.02.22-22.24.16:289][797]Cmd: EDIT COPY
-[2018.02.22-22.24.16:619][835]Cmd: EDIT PASTE
-[2018.02.22-22.24.40:105][389]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light91)
-[2018.02.22-22.24.40:800][463]Cmd: EDIT COPY
-[2018.02.22-22.24.41:163][504]Cmd: EDIT PASTE
-[2018.02.22-22.24.58:064][384]LogTemp: Repeating last play command: Selected Viewport
-[2018.02.22-22.24.58:445][384]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.24.58:451][384]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.02.22-22.24.58:535][384]PIE: New page: PIE session: VRProject (Feb 23, 2018, 12:24:58 AM)
-[2018.02.22-22.24.58:560][384]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
-[2018.02.22-22.24.58:636][384]LogPlayLevel: PIE: StaticDuplicateObject took: (0.076064s)
-[2018.02.22-22.24.58:637][384]LogAIModule: Creating AISystem for world VRProject
-[2018.02.22-22.24.58:638][384]LogPlayLevel: PIE: World Init took: (0.001421s)
-[2018.02.22-22.24.58:656][384]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.095594s)
-[2018.02.22-22.24.58:739][384]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.02.22-22.24.58:756][384]LogInit: FAudioDevice initialized.
-[2018.02.22-22.24.58:938][384]LogLoad: Game class is 'FirstPersonGameMode_C'
-[2018.02.22-22.24.59:143][384]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.02.22-23.24.59
-[2018.02.22-22.24.59:209][384]LogWorld: Bringing up level for play took: 0.096682
-[2018.02.22-22.24.59:418][384]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0017 seconds. Added 11 classes and 0 folders.
-[2018.02.22-22.24.59:532][384]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject 1.38
-[2018.02.22-22.24.59:532][384]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.26.35:958][888]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.26.36:142][888]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.26.37:089][985]LogTemp: Repeating last play command: Selected Viewport
-[2018.02.22-22.26.37:108][985]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.26.37:108][985]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.02.22-22.26.37:108][985]PIE: New page: PIE session: VRProject (Feb 23, 2018, 12:26:37 AM)
-[2018.02.22-22.26.37:108][985]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
-[2018.02.22-22.26.37:133][985]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025288s)
-[2018.02.22-22.26.37:134][985]LogAIModule: Creating AISystem for world VRProject
-[2018.02.22-22.26.37:134][985]LogPlayLevel: PIE: World Init took: (0.000762s)
-[2018.02.22-22.26.37:134][985]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.026384s)
-[2018.02.22-22.26.37:170][985]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.02.22-22.26.37:185][985]LogInit: FAudioDevice initialized.
-[2018.02.22-22.26.37:238][985]LogLoad: Game class is 'FirstPersonGameMode_C'
-[2018.02.22-22.26.37:253][985]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.02.22-23.26.37
-[2018.02.22-22.26.37:254][985]LogWorld: Bringing up level for play took: 0.015798
-[2018.02.22-22.26.37:256][985]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject 1.105
-[2018.02.22-22.26.37:257][985]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.26.39:135][206]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.26.39:177][206]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.27.06:527][128]LogTemp: Repeating last play command: Selected Viewport
-[2018.02.22-22.27.06:546][128]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.27.06:546][128]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.02.22-22.27.06:547][128]PIE: New page: PIE session: VRProject (Feb 23, 2018, 12:27:06 AM)
-[2018.02.22-22.27.06:547][128]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
-[2018.02.22-22.27.06:571][128]LogPlayLevel: PIE: StaticDuplicateObject took: (0.024803s)
-[2018.02.22-22.27.06:572][128]LogAIModule: Creating AISystem for world VRProject
-[2018.02.22-22.27.06:572][128]LogPlayLevel: PIE: World Init took: (0.000706s)
-[2018.02.22-22.27.06:572][128]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.025883s)
-[2018.02.22-22.27.06:611][128]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.02.22-22.27.06:626][128]LogInit: FAudioDevice initialized.
-[2018.02.22-22.27.06:656][128]LogLoad: Game class is 'FirstPersonGameMode_C'
-[2018.02.22-22.27.06:671][128]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.02.22-23.27.06
-[2018.02.22-22.27.06:672][128]LogWorld: Bringing up level for play took: 0.015796
-[2018.02.22-22.27.06:674][128]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject 0.523
-[2018.02.22-22.27.06:675][128]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.28.13:679][160]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.28.13:720][160]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.28.17:644][554]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light92)
-[2018.02.22-22.28.48:546][791]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Door10)
-[2018.02.22-22.28.49:068][839]Cmd: DELETE
-[2018.02.22-22.28.49:068][839]Cmd: ACTOR DELETE
-[2018.02.22-22.28.49:070][839]LogEditorActor: Deleted Actor: StaticMeshActor
-[2018.02.22-22.28.49:081][839]LogEditorActor: Deleted 1 Actors (0.013 secs)
-[2018.02.22-22.28.52:810][231]LogEditorViewport: Clicking on Actor (LMB): Door_C (DoorSalon)
-[2018.02.22-22.28.53:860][339]Cmd: EDIT COPY
-[2018.02.22-22.28.54:320][390]Cmd: EDIT PASTE
-[2018.02.22-22.29.36:219][672]LogEditorViewport: Clicking on Actor (LMB): Door_C (DoorSalon)
-[2018.02.22-22.29.49:170][ 51]LogTemp: Repeating last play command: Selected Viewport
-[2018.02.22-22.29.49:189][ 51]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.29.49:189][ 51]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.02.22-22.29.49:189][ 51]PIE: New page: PIE session: VRProject (Feb 23, 2018, 12:29:49 AM)
-[2018.02.22-22.29.49:189][ 51]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
-[2018.02.22-22.29.49:215][ 51]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025468s)
-[2018.02.22-22.29.49:215][ 51]LogAIModule: Creating AISystem for world VRProject
-[2018.02.22-22.29.49:216][ 51]LogPlayLevel: PIE: World Init took: (0.000751s)
-[2018.02.22-22.29.49:216][ 51]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.026607s)
-[2018.02.22-22.29.49:257][ 51]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.02.22-22.29.49:272][ 51]LogInit: FAudioDevice initialized.
-[2018.02.22-22.29.49:304][ 51]LogLoad: Game class is 'FirstPersonGameMode_C'
-[2018.02.22-22.29.49:320][ 51]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.02.22-23.29.49
-[2018.02.22-22.29.49:321][ 51]LogWorld: Bringing up level for play took: 0.016154
-[2018.02.22-22.29.49:323][ 51]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject -0.828
-[2018.02.22-22.29.49:323][ 51]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.30.47:280][956]LogCharacterMovement: FirstPersonCharacter_C_0 is stuck and failed to move! Velocity: X=16.97 Y=1.82 Z=0.00 Location: X=938.42 Y=-513.55 Z=98.15 Normal: X=0.85 Y=0.53 Z=0.00 PenetrationDepth:38.319 Actor:DoorSalon Component:Mesh BoneName:None (0 other events since notify)
-[2018.02.22-22.31.20:228][905]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.31.20:275][905]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.31.30:002][903]LogEditorViewport: Clicking on Actor (LMB): Door_C (DoorSalon)
-[2018.02.22-22.32.18:636][ 82]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube19)
-[2018.02.22-22.32.54:152][787]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube60)
-[2018.02.22-22.32.57:792][135]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (torch24)
-[2018.02.22-22.33.06:167][965]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (torch24)
-[2018.02.22-22.33.53:288][882]Cmd: EDIT COPY
-[2018.02.22-22.33.53:706][930]Cmd: EDIT PASTE
-[2018.02.22-22.34.29:024][611]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light77)
-[2018.02.22-22.34.31:028][825]LogEditorViewport: Clicking on Actor (CTRL LMB): Light_C (Light78)
-[2018.02.22-22.34.33:855][138]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light77)
-[2018.02.22-22.34.35:834][346]Cmd: EDIT COPY
-[2018.02.22-22.34.36:193][384]Cmd: EDIT PASTE
-[2018.02.22-22.35.02:725][195]Cmd: EDIT COPY
-[2018.02.22-22.35.03:019][228]Cmd: EDIT PASTE
-[2018.02.22-22.35.52:597][264]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube20)
-[2018.02.22-22.37.16:997][210]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (torch25)
-[2018.02.22-22.37.31:914][794]Cmd: EDIT COPY
-[2018.02.22-22.37.32:306][838]Cmd: EDIT PASTE
-[2018.02.22-22.38.23:510][331]Cmd: EDIT COPY
-[2018.02.22-22.38.23:905][375]Cmd: EDIT PASTE
-[2018.02.22-22.39.05:746][646]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light108)
-[2018.02.22-22.39.11:750][241]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (torch46)
-[2018.02.22-22.40.48:183][912]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube60)
-[2018.02.22-22.40.48:807][968]Cmd: EDIT COPY
-[2018.02.22-22.40.49:947][ 86]Cmd: EDIT PASTE
-[2018.02.22-22.41.05:487][596]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube65)
-[2018.02.22-22.41.37:645][ 41]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (torch15)
-[2018.02.22-22.42.11:802][716]Cmd: EDIT COPY
-[2018.02.22-22.42.12:907][845]Cmd: EDIT PASTE
-[2018.02.22-22.42.58:094][474]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light112)
-[2018.02.22-22.43.13:231][121]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (torch31)
-[2018.02.22-22.43.20:570][912]Cmd: EDIT COPY
-[2018.02.22-22.43.20:992][960]Cmd: EDIT PASTE
-[2018.02.22-22.43.40:278][ 42]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (torch18)
-[2018.02.22-22.43.47:863][887]Cmd: EDIT COPY
-[2018.02.22-22.43.48:180][922]Cmd: EDIT PASTE
-[2018.02.22-22.44.37:060][160]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube52)
-[2018.02.22-22.45.03:506][331]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (DirectionalLight)
-[2018.02.22-22.45.11:189][ 49]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light79)
-[2018.02.22-22.45.21:836][ 67]Cmd: TRANSACTION UNDO
-[2018.02.22-22.45.21:836][ 67]LogEditorTransaction: Undo Move Actors
-[2018.02.22-22.45.22:027][ 67]LogActorComponent: ~FComponentReregisterContext: (/Game/VRProject.VRProject:PersistentLevel.Light79.PointLight1) Component already registered.
-[2018.02.22-22.45.22:027][ 67]LogActorComponent: ~FComponentReregisterContext: (/Game/VRProject.VRProject:PersistentLevel.Light86.PointLight1) Component already registered.
-[2018.02.22-22.45.22:028][ 67]LogActorComponent: ~FComponentReregisterContext: (/Game/VRProject.VRProject:PersistentLevel.Light85.PointLight1) Component already registered.
-[2018.02.22-22.45.22:028][ 67]LogActorComponent: ~FComponentReregisterContext: (/Game/VRProject.VRProject:PersistentLevel.Light81.PointLight1) Component already registered.
-[2018.02.22-22.45.23:283][186]LogEditorViewport: Clicking Background
-[2018.02.22-22.45.26:045][503]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light85)
-[2018.02.22-22.45.28:420][748]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light97)
-[2018.02.22-22.45.41:740][ 90]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (DirectionalLight)
-[2018.02.22-22.46.05:543][459]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (DirectionalLight2)
-[2018.02.22-22.46.10:511][988]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube55)
-[2018.02.22-22.46.18:204][760]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube52)
-[2018.02.22-22.47.03:905][147]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto7.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
-[2018.02.22-22.47.04:713][147]LogSavePackage: Save=740.67ms
-[2018.02.22-22.47.04:713][147]LogSavePackage: Moving 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/VRProject_Auto7F4393149464FAE4D575A808CF58BA572.tmp' to 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto7.umap'
-[2018.02.22-22.47.04:716][147]LogSavePackage: Display: Finished SavePackage C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto7.umap
-[2018.02.22-22.47.04:718][147]LogSlate: Took 0.000189 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.02.22-22.47.04:720][147]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VRProject' took 0.953
-[2018.02.22-22.47.04:720][147]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.953
-[2018.02.22-22.48.37:677][372]LogTemp: Repeating last play command: Selected Viewport
-[2018.02.22-22.48.37:696][372]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.48.37:697][372]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.02.22-22.48.37:697][372]PIE: New page: PIE session: VRProject (Feb 23, 2018, 12:48:37 AM)
-[2018.02.22-22.48.37:697][372]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
-[2018.02.22-22.48.37:725][372]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028629s)
-[2018.02.22-22.48.37:726][372]LogAIModule: Creating AISystem for world VRProject
-[2018.02.22-22.48.37:726][372]LogPlayLevel: PIE: World Init took: (0.000836s)
-[2018.02.22-22.48.37:727][372]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.029875s)
-[2018.02.22-22.48.37:767][372]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.02.22-22.48.37:782][372]LogInit: FAudioDevice initialized.
-[2018.02.22-22.48.37:815][372]LogLoad: Game class is 'FirstPersonGameMode_C'
-[2018.02.22-22.48.37:832][372]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.02.22-23.48.37
-[2018.02.22-22.48.37:833][372]LogWorld: Bringing up level for play took: 0.017559
-[2018.02.22-22.48.37:836][372]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject -0.316
-[2018.02.22-22.48.37:836][372]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.48.40:896][734]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.48.40:952][734]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.48.47:990][362]MapCheck: New page: Map Check
-[2018.02.22-22.48.48:057][362]Cmd: MAP REBUILD ALLVISIBLE
-[2018.02.22-22.48.48:068][362]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2018.02.22-22.48.48:467][362]LightingResults: New page: Lighting Build - Feb 23, 2018, 12:48:48 AM
-[2018.02.22-22.48.48:686][362]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2018.02.22-22.48.48:998][362]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2018.02.22-22.48.49:024][362]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2018.02.22-22.48.50:563][362]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2018.02.22-22.48.50:563][362]LogSwarmInterface: [TryOpenConnection] Local Process ID is 9096
-[2018.02.22-22.48.51:053][362]LogStaticLightingSystem: Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
-[2018.02.22-22.48.51:054][362]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2018.02.22-22.48.51:054][362]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2018.02.22-22.48.51:054][362]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2018.02.22-22.48.51:054][362]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2018.02.22-22.48.51:054][362]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2018.02.22-22.48.51:233][362]LogEditorBuildUtils: Build time 0:03
-[2018.02.22-22.49.27:624][463]LightingResults: Warning: biurko Object has overlapping UVs.
-[2018.02.22-22.49.27:624][463]LightingResults: biurko Lightmap UV are overlapping by 1.2%. Please adjust content - Enable Error Coloring to visualize.
-[2018.02.22-22.49.57:205][144]Job is a success!
-[2018.02.22-22.49.59:827][145]LogTexture: Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 1024X1024)
-[2018.02.22-22.49.59:827][145]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 1024X1024)
-[2018.02.22-22.49.59:827][145]LogTexture: Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 256X256)
-[2018.02.22-22.49.59:827][145]LogTexture: Display: Building textures: LQ_Lightmap_0_2 (DXT1, 256X256)
-[2018.02.22-22.49.59:827][145]LogTexture: Display: Building textures: HQ_Lightmap0_3 (AutoDXT, 1024X1024)
-[2018.02.22-22.49.59:827][145]LogTexture: Display: Building textures: LQ_Lightmap_0_3 (DXT1, 1024X1024)
-[2018.02.22-22.50.00:027][145]LogTexture: Display: Building textures: ShadowMapTexture2D_2 (BGRA8, 128X128)
-[2018.02.22-22.50.00:119][145]LogTexture: Display: Building textures: ShadowMapTexture2D_1 (BGRA8, 1024X1024)
-[2018.02.22-22.50.00:157][145]Lightmass on ZBAJSZEK: 1:07 min total, 315 ms importing, 53 ms setup, 3.15 sec photons, 1:04 min processing, 0 ms extra exporting [212/212 mappings]. Threads: 4:17 min total, 3:03 min processing.
-[2018.02.22-22.50.00:252][145]LogStaticLightingSystem: Illumination: 1:11 min (2.14 sec encoding lightmaps, 287 ms encoding shadowmaps)
-[2018.02.22-22.50.00:252][145]LogStaticLightingSystem: Lightmap texture memory:  4.1 MB (4.0 MB streaming, 0.1 MB non-streaming), 6 textures
-[2018.02.22-22.50.00:252][145]LogStaticLightingSystem: Shadowmap texture memory: 5.4 MB (5.3 MB streaming, 0.1 MB non-streaming), 2 textures
-[2018.02.22-22.50.03:089][145]DumpUnbuiltLightIteractions
-[2018.02.22-22.50.03:089][145]Lights with unbuilt interactions: 0
-[2018.02.22-22.50.03:089][145]
-[2018.02.22-22.50.03:089][145]Primitives with unbuilt interactions: 0
-[2018.02.22-22.50.03:144][146]Cmd: MAP CHECK NOTIFYRESULTS
-[2018.02.22-22.50.03:144][146]MapCheck: New page: VRProject - Feb 23, 2018, 12:50:03 AM
-[2018.02.22-22.50.03:166][146]MapCheck: Error: Cube10_98 Cube10_98 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:166][146]MapCheck: Error: Cube11 Cube11 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:166][146]MapCheck: Error: Cube12_128 Cube12_128 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:167][146]MapCheck: Error: Cube14 Cube14 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:167][146]MapCheck: Error: Cube15 Cube15 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:167][146]MapCheck: Error: Cube17 Cube17 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:167][146]MapCheck: Error: Cube18 Cube18 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:167][146]MapCheck: Error: Cube19 Cube19 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:167][146]MapCheck: Error: Cube20 Cube20 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:167][146]MapCheck: Error: Cube21_179 Cube21_179 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:167][146]MapCheck: Error: Cube23 Cube23 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:184][146]MapCheck: Error: Cube24 Cube24 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:184][146]MapCheck: Error: Cube25 Cube25 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:184][146]MapCheck: Error: Cube26 Cube26 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:184][146]MapCheck: Error: Cube27 Cube27 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:184][146]MapCheck: Error: Cube28 Cube28 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:184][146]MapCheck: Error: Cube29 Cube29 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:184][146]MapCheck: Error: Cube2_29 Cube2_29 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:184][146]MapCheck: Error: Cube30 Cube30 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:184][146]MapCheck: Error: Cube31 Cube31 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:184][146]MapCheck: Error: Cube32 Cube32 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:185][146]MapCheck: Error: Cube33 Cube33 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:185][146]MapCheck: Error: Cube34 Cube34 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:185][146]MapCheck: Error: Cube36 Cube36 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:185][146]MapCheck: Error: Cube37 Cube37 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:185][146]MapCheck: Error: Cube38 Cube38 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:185][146]MapCheck: Error: Cube39 Cube39 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:185][146]MapCheck: Error: Cube3_31 Cube3_31 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:185][146]MapCheck: Error: Cube4_33 Cube4_33 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:185][146]MapCheck: Error: Cube5 Cube5 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:186][146]MapCheck: Error: Cube6_39 Cube6_39 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:186][146]MapCheck: Error: Cube7 Cube7 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:186][146]MapCheck: Error: Cube8 Cube8 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:186][146]MapCheck: Error: Cube9 Cube9 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:186][146]MapCheck: Error: Cube_27 Cube_27 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:186][146]MapCheck: Error: Floor2 Floor2 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:186][146]MapCheck: Error: Floor4 Floor4 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:186][146]MapCheck: Error: Floor6 Floor6 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:186][146]MapCheck: Error: Floor7 Floor7 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:186][146]MapCheck: Error: Floor_89 Floor_89 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:188][146]MapCheck: Error: Floor8 Floor8 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:188][146]MapCheck: Error: Cube35_2 Cube35_2 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:188][146]MapCheck: Error: Cube59 Cube59 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:188][146]MapCheck: Error: Cube60 Cube60 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:188][146]MapCheck: Error: Floor9 Floor9 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:188][146]MapCheck: Error: Floor10 Floor10 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:188][146]MapCheck: Error: Cube61 Cube61 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:188][146]MapCheck: Error: Cube62 Cube62 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:188][146]MapCheck: Error: Cube63 Cube63 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:189][146]MapCheck: Error: Cube64 Cube64 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:189][146]MapCheck: Error: Cube65 Cube65 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.50.03:210][146]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
-[2018.02.22-22.50.03:210][146]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
-[2018.02.22-22.50.03:210][146]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
-[2018.02.22-22.50.03:305][146]MapCheck: Map check complete: 51 Error(s), 3 Warning(s), took 160.485ms to complete.
-[2018.02.22-22.50.09:205][757]LogTemp: Repeating last play command: Selected Viewport
-[2018.02.22-22.50.09:224][757]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.50.09:224][757]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.02.22-22.50.09:224][757]PIE: New page: PIE session: VRProject (Feb 23, 2018, 12:50:09 AM)
-[2018.02.22-22.50.09:224][757]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
-[2018.02.22-22.50.09:255][757]LogPlayLevel: PIE: StaticDuplicateObject took: (0.030069s)
-[2018.02.22-22.50.09:255][757]LogAIModule: Creating AISystem for world VRProject
-[2018.02.22-22.50.09:255][757]LogPlayLevel: PIE: World Init took: (0.000715s)
-[2018.02.22-22.50.09:256][757]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.031147s)
-[2018.02.22-22.50.09:294][757]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.02.22-22.50.09:309][757]LogInit: FAudioDevice initialized.
-[2018.02.22-22.50.09:345][757]LogLoad: Game class is 'FirstPersonGameMode_C'
-[2018.02.22-22.50.09:362][757]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.02.22-23.50.09
-[2018.02.22-22.50.09:364][757]LogWorld: Bringing up level for play took: 0.017679
-[2018.02.22-22.50.09:366][757]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject -0.785
-[2018.02.22-22.50.09:366][757]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.51.49:798][798]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.51.49:855][798]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
-[2018.02.22-22.51.55:594][431]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (DirectionalLight2)
-[2018.02.22-22.51.56:833][565]Cmd: DELETE
-[2018.02.22-22.51.56:833][565]Cmd: ACTOR DELETE
-[2018.02.22-22.51.56:834][565]LogEditorActor: Deleted Actor: DirectionalLight
-[2018.02.22-22.51.56:845][565]LogEditorActor: Deleted 1 Actors (0.012 secs)
-[2018.02.22-22.51.57:650][661]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (DirectionalLight)
-[2018.02.22-22.51.58:019][698]Cmd: DELETE
-[2018.02.22-22.51.58:019][698]Cmd: ACTOR DELETE
-[2018.02.22-22.51.58:020][698]LogEditorActor: Deleted Actor: DirectionalLight
-[2018.02.22-22.51.58:032][698]LogEditorActor: Deleted 1 Actors (0.013 secs)
-[2018.02.22-22.52.16:795][899]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light41)
-[2018.02.22-22.52.22:181][456]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube59)
-[2018.02.22-22.52.22:874][525]LogEditorViewport: Clicking on Actor (LMB): Lamp_C (Lamp7)
-[2018.02.22-22.52.25:595][821]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light43)
-[2018.02.22-22.53.12:721][729]Cmd: EDIT COPY
-[2018.02.22-22.53.12:965][755]Cmd: EDIT PASTE
-[2018.02.22-22.53.45:790][ 99]Cmd: EDIT COPY
-[2018.02.22-22.53.46:056][127]Cmd: EDIT PASTE
-[2018.02.22-22.54.02:151][783]Cmd: EDIT COPY
-[2018.02.22-22.54.02:518][822]Cmd: EDIT PASTE
-[2018.02.22-22.54.23:065][995]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight49)
-[2018.02.22-22.54.49:760][735]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light106)
-[2018.02.22-22.54.55:141][286]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light107)
-[2018.02.22-22.55.16:284][441]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light106)
-[2018.02.22-22.55.23:073][140]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light109)
-[2018.02.22-22.55.27:559][588]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light105)
-[2018.02.22-22.55.35:034][390]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light97)
-[2018.02.22-22.55.37:730][673]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light96)
-[2018.02.22-22.55.47:926][752]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light99)
-[2018.02.22-22.56.09:737][ 30]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube35)
-[2018.02.22-22.56.23:401][505]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light64)
-[2018.02.22-22.56.34:614][645]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light63)
-[2018.02.22-22.57.02:659][339]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light62)
-[2018.02.22-22.57.18:089][974]MapCheck: New page: Map Check
-[2018.02.22-22.57.18:102][974]Cmd: MAP REBUILD ALLVISIBLE
-[2018.02.22-22.57.18:102][974]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2018.02.22-22.57.18:316][974]LightingResults: New page: Lighting Build - Feb 23, 2018, 12:57:18 AM
-[2018.02.22-22.57.18:326][974]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2018.02.22-22.57.18:328][974]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2018.02.22-22.57.18:328][974]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2018.02.22-22.57.18:337][974]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2018.02.22-22.57.18:338][974]LogSwarmInterface: [TryOpenConnection] Local Process ID is 9096
-[2018.02.22-22.57.18:348][974]LogStaticLightingSystem: Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
-[2018.02.22-22.57.18:348][974]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2018.02.22-22.57.18:348][974]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2018.02.22-22.57.18:348][974]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2018.02.22-22.57.18:348][974]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2018.02.22-22.57.18:348][974]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2018.02.22-22.57.18:463][974]LogEditorBuildUtils: Build time 0:00
-[2018.02.22-22.58.00:334][882]LightingResults: Warning: biurko Object has overlapping UVs.
-[2018.02.22-22.58.00:334][882]LightingResults: biurko Lightmap UV are overlapping by 1.2%. Please adjust content - Enable Error Coloring to visualize.
-[2018.02.22-22.58.30:685][973]Job is a success!
-[2018.02.22-22.58.31:910][974]LogTexture: Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 1024X1024)
-[2018.02.22-22.58.31:911][974]LogTexture: Display: Building textures: LQ_Lightmap_1_1 (DXT1, 1024X1024)
-[2018.02.22-22.58.31:911][974]LogTexture: Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 256X256)
-[2018.02.22-22.58.31:911][974]LogTexture: Display: Building textures: LQ_Lightmap_1_2 (DXT1, 256X256)
-[2018.02.22-22.58.31:911][974]LogTexture: Display: Building textures: HQ_Lightmap1_3 (AutoDXT, 1024X1024)
-[2018.02.22-22.58.31:911][974]LogTexture: Display: Building textures: LQ_Lightmap_1_3 (DXT1, 1024X1024)
-[2018.02.22-22.58.31:951][974]LogTexture: Display: Building textures: ShadowMapTexture2D_3 (G8, 1024X128)
-[2018.02.22-22.58.31:973][974]Lightmass on ZBAJSZEK: 1:12 min total, 198 ms importing, 58 ms setup, 4.93 sec photons, 1:07 min processing, 0 ms extra exporting [212/212 mappings]. Threads: 4:30 min total, 3:17 min processing.
-[2018.02.22-22.58.32:008][974]LogStaticLightingSystem: Illumination: 1:13 min (758 ms encoding lightmaps, 34 ms encoding shadowmaps)
-[2018.02.22-22.58.32:008][974]LogStaticLightingSystem: Lightmap texture memory:  4.1 MB (4.0 MB streaming, 0.1 MB non-streaming), 6 textures
-[2018.02.22-22.58.32:008][974]LogStaticLightingSystem: Shadowmap texture memory: 0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 1 textures
-[2018.02.22-22.58.32:386][974]DumpUnbuiltLightIteractions
-[2018.02.22-22.58.32:386][974]Lights with unbuilt interactions: 0
-[2018.02.22-22.58.32:386][974]
-[2018.02.22-22.58.32:386][974]Primitives with unbuilt interactions: 0
-[2018.02.22-22.58.32:397][975]Cmd: MAP CHECK NOTIFYRESULTS
-[2018.02.22-22.58.32:398][975]MapCheck: New page: VRProject - Feb 23, 2018, 12:58:32 AM
-[2018.02.22-22.58.32:404][975]MapCheck: Error: Cube10_98 Cube10_98 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:404][975]MapCheck: Error: Cube11 Cube11 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:404][975]MapCheck: Error: Cube12_128 Cube12_128 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:404][975]MapCheck: Error: Cube14 Cube14 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:404][975]MapCheck: Error: Cube15 Cube15 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:404][975]MapCheck: Error: Cube17 Cube17 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:404][975]MapCheck: Error: Cube18 Cube18 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:405][975]MapCheck: Error: Cube19 Cube19 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:405][975]MapCheck: Error: Cube20 Cube20 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:405][975]MapCheck: Error: Cube21_179 Cube21_179 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:405][975]MapCheck: Error: Cube23 Cube23 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:405][975]MapCheck: Error: Cube24 Cube24 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:405][975]MapCheck: Error: Cube25 Cube25 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:405][975]MapCheck: Error: Cube26 Cube26 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:405][975]MapCheck: Error: Cube27 Cube27 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:405][975]MapCheck: Error: Cube28 Cube28 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:406][975]MapCheck: Error: Cube29 Cube29 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:406][975]MapCheck: Error: Cube2_29 Cube2_29 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:406][975]MapCheck: Error: Cube30 Cube30 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:406][975]MapCheck: Error: Cube31 Cube31 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:406][975]MapCheck: Error: Cube32 Cube32 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:406][975]MapCheck: Error: Cube33 Cube33 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:406][975]MapCheck: Error: Cube34 Cube34 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:406][975]MapCheck: Error: Cube36 Cube36 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:406][975]MapCheck: Error: Cube37 Cube37 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:406][975]MapCheck: Error: Cube38 Cube38 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:406][975]MapCheck: Error: Cube39 Cube39 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:407][975]MapCheck: Error: Cube3_31 Cube3_31 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:407][975]MapCheck: Error: Cube4_33 Cube4_33 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:407][975]MapCheck: Error: Cube5 Cube5 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:407][975]MapCheck: Error: Cube6_39 Cube6_39 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:407][975]MapCheck: Error: Cube7 Cube7 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:407][975]MapCheck: Error: Cube8 Cube8 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:407][975]MapCheck: Error: Cube9 Cube9 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:407][975]MapCheck: Error: Cube_27 Cube_27 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:408][975]MapCheck: Error: Floor2 Floor2 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:408][975]MapCheck: Error: Floor4 Floor4 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:408][975]MapCheck: Error: Floor6 Floor6 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:408][975]MapCheck: Error: Floor7 Floor7 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:408][975]MapCheck: Error: Floor_89 Floor_89 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:409][975]MapCheck: Error: Floor8 Floor8 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:409][975]MapCheck: Error: Cube35_2 Cube35_2 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:409][975]MapCheck: Error: Cube59 Cube59 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:409][975]MapCheck: Error: Cube60 Cube60 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:410][975]MapCheck: Error: Floor9 Floor9 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:410][975]MapCheck: Error: Floor10 Floor10 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:410][975]MapCheck: Error: Cube61 Cube61 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:410][975]MapCheck: Error: Cube62 Cube62 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:410][975]MapCheck: Error: Cube63 Cube63 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:410][975]MapCheck: Error: Cube64 Cube64 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:410][975]MapCheck: Error: Cube65 Cube65 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-22.58.32:411][975]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
-[2018.02.22-22.58.32:411][975]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
-[2018.02.22-22.58.32:411][975]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
-[2018.02.22-22.58.32:510][975]MapCheck: Map check complete: 51 Error(s), 3 Warning(s), took 112.313ms to complete.
-[2018.02.22-22.58.56:558][554]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto8.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
-[2018.02.22-22.58.57:418][554]LogSavePackage: Save=768.40ms
-[2018.02.22-22.58.57:418][554]LogSavePackage: Moving 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/VRProject_Auto854D48C2941D7EC1CB4FC4DBB14C528B9.tmp' to 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto8.umap'
-[2018.02.22-22.58.57:421][554]LogSavePackage: Display: Finished SavePackage C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto8.umap
-[2018.02.22-22.58.57:425][554]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VRProject' took 0.879
-[2018.02.22-22.58.57:425][554]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.879
-[2018.02.22-22.58.57:429][554]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/VRProject_BuiltData] ([1] browsable assets)...
-[2018.02.22-22.58.57:429][554]OBJ SavePackage: Finished generating thumbnails for package [/Game/VRProject_BuiltData]
-[2018.02.22-22.58.57:429][554]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject_BuiltData" FILE="C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_BuiltData_Auto8.uasset" SILENT=false AUTOSAVING=true
-[2018.02.22-22.58.57:547][554]LogSavePackage: Save=38.37ms
-[2018.02.22-22.58.57:547][554]LogSavePackage: Moving 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/VRProject_BuiltData_Auto8F34B6E8F46B7E99CE0F503B6CAD14446.tmp' to 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_BuiltData_Auto8.uasset'
-[2018.02.22-22.58.57:549][554]LogSavePackage: Display: Finished SavePackage C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_BuiltData_Auto8.uasset
-[2018.02.22-22.58.57:754][554]LogFileHelpers: Auto-saving content packages took 0.122
-[2018.02.22-23.00.14:405][337]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube34)
-[2018.02.22-23.00.15:249][423]Cmd: EDIT COPY
-[2018.02.22-23.00.15:634][465]Cmd: EDIT PASTE
-[2018.02.22-23.02.09:410][864]MapCheck: New page: Map Check
-[2018.02.22-23.02.09:423][864]Cmd: MAP REBUILD ALLVISIBLE
-[2018.02.22-23.02.09:423][864]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2018.02.22-23.02.09:650][864]LightingResults: New page: Lighting Build - Feb 23, 2018, 1:02:09 AM
-[2018.02.22-23.02.09:659][864]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2018.02.22-23.02.09:661][864]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2018.02.22-23.02.09:661][864]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2018.02.22-23.02.09:662][864]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2018.02.22-23.02.09:662][864]LogSwarmInterface: [TryOpenConnection] Local Process ID is 9096
-[2018.02.22-23.02.09:666][864]LogStaticLightingSystem: Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
-[2018.02.22-23.02.09:666][864]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2018.02.22-23.02.09:666][864]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2018.02.22-23.02.09:666][864]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2018.02.22-23.02.09:666][864]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2018.02.22-23.02.09:666][864]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2018.02.22-23.02.09:781][864]LogEditorBuildUtils: Build time 0:00
-[2018.02.22-23.02.52:957][870]LightingResults: Warning: biurko Object has overlapping UVs.
-[2018.02.22-23.02.52:957][870]LightingResults: biurko Lightmap UV are overlapping by 1.2%. Please adjust content - Enable Error Coloring to visualize.
-[2018.02.22-23.03.37:184][159]Job is a success!
-[2018.02.22-23.03.38:068][161]LogTexture: Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 1024X1024)
-[2018.02.22-23.03.38:068][161]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 1024X1024)
-[2018.02.22-23.03.38:068][161]LogTexture: Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 256X256)
-[2018.02.22-23.03.38:068][161]LogTexture: Display: Building textures: LQ_Lightmap_0_2 (DXT1, 256X256)
-[2018.02.22-23.03.38:068][161]LogTexture: Display: Building textures: HQ_Lightmap0_3 (AutoDXT, 1024X1024)
-[2018.02.22-23.03.38:068][161]LogTexture: Display: Building textures: LQ_Lightmap_0_3 (DXT1, 1024X1024)
-[2018.02.22-23.03.38:105][161]LogTexture: Display: Building textures: ShadowMapTexture2D_4 (G8, 1024X128)
-[2018.02.22-23.03.38:130][161]Lightmass on ZBAJSZEK: 1:27 min total, 207 ms importing, 62 ms setup, 5.39 sec photons, 1:21 min processing, 0 ms extra exporting [213/213 mappings]. Threads: 5:27 min total, 4:02 min processing.
-[2018.02.22-23.03.38:156][161]LogStaticLightingSystem: Illumination: 1:28 min (731 ms encoding lightmaps, 34 ms encoding shadowmaps)
-[2018.02.22-23.03.38:156][161]LogStaticLightingSystem: Lightmap texture memory:  4.1 MB (4.0 MB streaming, 0.1 MB non-streaming), 6 textures
-[2018.02.22-23.03.38:156][161]LogStaticLightingSystem: Shadowmap texture memory: 0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 1 textures
-[2018.02.22-23.03.38:711][161]DumpUnbuiltLightIteractions
-[2018.02.22-23.03.38:711][161]Lights with unbuilt interactions: 0
-[2018.02.22-23.03.38:711][161]
-[2018.02.22-23.03.38:711][161]Primitives with unbuilt interactions: 0
-[2018.02.22-23.03.38:722][162]Cmd: MAP CHECK NOTIFYRESULTS
-[2018.02.22-23.03.38:723][162]MapCheck: New page: VRProject - Feb 23, 2018, 1:03:38 AM
-[2018.02.22-23.03.38:725][162]MapCheck: Error: Cube10_98 Cube10_98 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:725][162]MapCheck: Error: Cube11 Cube11 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:725][162]MapCheck: Error: Cube12_128 Cube12_128 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:725][162]MapCheck: Error: Cube14 Cube14 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:725][162]MapCheck: Error: Cube15 Cube15 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:725][162]MapCheck: Error: Cube17 Cube17 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:725][162]MapCheck: Error: Cube18 Cube18 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:725][162]MapCheck: Error: Cube19 Cube19 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:725][162]MapCheck: Error: Cube20 Cube20 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:726][162]MapCheck: Error: Cube21_179 Cube21_179 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:726][162]MapCheck: Error: Cube23 Cube23 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:726][162]MapCheck: Error: Cube24 Cube24 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:726][162]MapCheck: Error: Cube25 Cube25 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:726][162]MapCheck: Error: Cube26 Cube26 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:726][162]MapCheck: Error: Cube27 Cube27 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:726][162]MapCheck: Error: Cube28 Cube28 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:726][162]MapCheck: Error: Cube29 Cube29 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:726][162]MapCheck: Error: Cube2_29 Cube2_29 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:726][162]MapCheck: Error: Cube30 Cube30 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:726][162]MapCheck: Error: Cube31 Cube31 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:726][162]MapCheck: Error: Cube32 Cube32 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:727][162]MapCheck: Error: Cube33 Cube33 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:727][162]MapCheck: Error: Cube34 Cube34 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:727][162]MapCheck: Error: Cube36 Cube36 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:727][162]MapCheck: Error: Cube37 Cube37 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:727][162]MapCheck: Error: Cube38 Cube38 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:727][162]MapCheck: Error: Cube39 Cube39 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:727][162]MapCheck: Error: Cube3_31 Cube3_31 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:727][162]MapCheck: Error: Cube4_33 Cube4_33 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:727][162]MapCheck: Error: Cube5 Cube5 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:728][162]MapCheck: Error: Cube6_39 Cube6_39 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:728][162]MapCheck: Error: Cube7 Cube7 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:728][162]MapCheck: Error: Cube8 Cube8 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:728][162]MapCheck: Error: Cube9 Cube9 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:728][162]MapCheck: Error: Cube_27 Cube_27 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:728][162]MapCheck: Error: Floor2 Floor2 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:728][162]MapCheck: Error: Floor4 Floor4 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:728][162]MapCheck: Error: Floor6 Floor6 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:728][162]MapCheck: Error: Floor7 Floor7 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:728][162]MapCheck: Error: Floor_89 Floor_89 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:730][162]MapCheck: Error: Floor8 Floor8 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:730][162]MapCheck: Error: Cube35_2 Cube35_2 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:730][162]MapCheck: Error: Cube59 Cube59 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:730][162]MapCheck: Error: Cube60 Cube60 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:730][162]MapCheck: Error: Floor9 Floor9 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:730][162]MapCheck: Error: Floor10 Floor10 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:730][162]MapCheck: Error: Cube61 Cube61 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:730][162]MapCheck: Error: Cube62 Cube62 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:731][162]MapCheck: Error: Cube63 Cube63 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:731][162]MapCheck: Error: Cube64 Cube64 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:731][162]MapCheck: Error: Cube65 Cube65 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:731][162]MapCheck: Error: Cube66 Cube66 : Invalid DrawScale/DrawScale3D 
-[2018.02.22-23.03.38:732][162]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
-[2018.02.22-23.03.38:732][162]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
-[2018.02.22-23.03.38:732][162]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
-[2018.02.22-23.03.38:825][162]MapCheck: Map check complete: 52 Error(s), 3 Warning(s), took 102.147ms to complete.
-[2018.02.22-23.06.01:649][968]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="C:/Users/Zbajchu/Documents/GitHub/VR/Content/VRProject.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.02.22-23.06.02:454][968]LogSavePackage: Save=726.92ms
-[2018.02.22-23.06.02:454][968]LogSavePackage: Moving 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/VRProject00A1096C4362E1672FB663AA0A89EBF4.tmp' to 'C:/Users/Zbajchu/Documents/GitHub/VR/Content/VRProject.umap'
-[2018.02.22-23.06.02:459][968]LogSavePackage: Display: Finished SavePackage C:/Users/Zbajchu/Documents/GitHub/VR/Content/VRProject.umap
-[2018.02.22-23.06.02:530][968]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject_BuiltData" FILE="C:/Users/Zbajchu/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset" SILENT=true
-[2018.02.22-23.06.02:838][968]LogSavePackage: Save=240.35ms
-[2018.02.22-23.06.02:838][968]LogSavePackage: Moving 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/VRProject_BuiltData18CB1CB74BBFBF62147B05A16788827C.tmp' to 'C:/Users/Zbajchu/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset'
-[2018.02.22-23.06.02:841][968]LogSavePackage: Display: Finished SavePackage C:/Users/Zbajchu/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset
-[2018.02.22-23.07.52:719][202]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="C:/Users/Zbajchu/Documents/GitHub/VR/Content/VRProject.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.02.22-23.07.53:521][202]LogSavePackage: Save=726.48ms
-[2018.02.22-23.07.53:522][202]LogSavePackage: Moving 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/VRProjectC46C4DB2466F70CCBAE5958355801A47.tmp' to 'C:/Users/Zbajchu/Documents/GitHub/VR/Content/VRProject.umap'
-[2018.02.22-23.07.53:523][202]LogSavePackage: Display: Finished SavePackage C:/Users/Zbajchu/Documents/GitHub/VR/Content/VRProject.umap
-[2018.02.22-23.07.53:559][202]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject_BuiltData" FILE="C:/Users/Zbajchu/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset" SILENT=true
-[2018.02.22-23.07.53:833][202]LogSavePackage: Save=209.74ms
-[2018.02.22-23.07.53:833][202]LogSavePackage: Moving 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/VRProject_BuiltDataDEEAA5C843EE30ACCE7A139B5603F2A5.tmp' to 'C:/Users/Zbajchu/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset'
-[2018.02.22-23.07.53:835][202]LogSavePackage: Display: Finished SavePackage C:/Users/Zbajchu/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset
-[2018.02.22-23.07.59:550][741]Cmd: QUIT_EDITOR
-[2018.02.22-23.08.00:269][741]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.02.22-23.08.00:286][741]LogExit: Preparing to exit.
-[2018.02.22-23.08.01:439][741]LogExit: Editor shut down
-[2018.02.22-23.08.01:472][741]LogExit: Transaction tracking system shut down
-[2018.02.22-23.08.01:706][741]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2018.02.22-23.08.01:706][741]LogDirectoryWatcher: A directory notification for 'C:/Users/Zbajchu/Documents/GitHub/VR/Content/' was aborted.
-[2018.02.22-23.08.01:706][741]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2018.02.22-23.08.01:706][741]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
-[2018.02.22-23.08.01:706][741]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
-[2018.02.22-23.08.01:807][741]LogExit: Object subsystem successfully closed.
-[2018.02.22-23.08.01:860][741]LogD3D11RHI: Shutdown
-[2018.02.22-23.08.01:860][741]LogD3D11RHI: CleanupD3DDevice
-[2018.02.22-23.08.02:067][741]LogD3D11RHI: ~FD3D11DynamicRHI
-[2018.02.22-23.08.02:079][741]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (532)
-[2018.02.22-23.08.02:079][741]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (530)
-[2018.02.22-23.08.02:079][741]LogModuleManager: Shutting down and abandoning module SceneOutliner (528)
-[2018.02.22-23.08.02:079][741]LogModuleManager: Shutting down and abandoning module AddContentDialog (526)
-[2018.02.22-23.08.02:090][741]LogDirectoryWatcher: A directory notification for 'G:/Programy/UE_4.17/FeaturePacks/' was aborted.
-[2018.02.22-23.08.02:104][741]LogModuleManager: Shutting down and abandoning module WidgetCarousel (525)
-[2018.02.22-23.08.02:104][741]LogModuleManager: Shutting down and abandoning module EditorWidgets (522)
-[2018.02.22-23.08.02:104][741]LogModuleManager: Shutting down and abandoning module CollectionManager (520)
-[2018.02.22-23.08.02:104][741]LogDirectoryWatcher: A directory notification for 'C:/Users/Zbajchu/Documents/GitHub/VR/Content/Collections/' was aborted.
-[2018.02.22-23.08.02:105][741]LogDirectoryWatcher: A directory notification for 'C:/Users/Zbajchu/Documents/GitHub/VR/Content/Developers/Zbajchu/Collections/' was aborted.
-[2018.02.22-23.08.02:105][741]LogDirectoryWatcher: A directory notification for 'C:/Users/Zbajchu/Documents/GitHub/VR/Saved/Collections/' was aborted.
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module StatsViewer (518)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module FoliageEdit (516)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module LandscapeEditor (514)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module MeshPaintMode (512)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (510)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module ActorPickerMode (508)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module GeometryMode (506)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module TextureAlignMode (504)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module BspMode (502)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (500)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module HardwareSurvey (498)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (496)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module AutomationWorker (494)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (492)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (490)
-[2018.02.22-23.08.02:105][741]LogModuleManager: Shutting down and abandoning module PlacementMode (489)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (486)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (484)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (482)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (480)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (478)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module Media (477)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (474)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module CharacterAI (472)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module AudioCapture (470)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module SequenceRecorder (469)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module SmartSnapping (466)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module SessionServices (464)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module ViewportSnapping (462)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module ViewportInteraction (460)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module ClothPainter (458)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module LogVisualizer (456)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module IntroTutorials (454)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (453)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (450)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (448)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (446)
-[2018.02.22-23.08.02:106][741]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (445)
-[2018.02.22-23.08.02:779][741]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (442)
-[2018.02.22-23.08.02:779][741]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (440)
-[2018.02.22-23.08.02:779][741]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (438)
-[2018.02.22-23.08.02:779][741]LogModuleManager: Shutting down and abandoning module InputBindingEditor (436)
-[2018.02.22-23.08.02:779][741]LogModuleManager: Shutting down and abandoning module MergeActors (434)
-[2018.02.22-23.08.02:779][741]LogModuleManager: Shutting down and abandoning module SizeMap (432)
-[2018.02.22-23.08.02:779][741]LogModuleManager: Shutting down and abandoning module TreeMap (430)
-[2018.02.22-23.08.02:779][741]LogModuleManager: Shutting down and abandoning module ReferenceViewer (428)
-[2018.02.22-23.08.02:779][741]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (426)
-[2018.02.22-23.08.02:780][741]LogModuleManager: Shutting down and abandoning module LocalizationService (425)
-[2018.02.22-23.08.02:780][741]LogModuleManager: Shutting down and abandoning module HardwareTargeting (422)
-[2018.02.22-23.08.02:780][741]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (420)
-[2018.02.22-23.08.02:780][741]LogModuleManager: Shutting down and abandoning module UndoHistory (418)
-[2018.02.22-23.08.02:780][741]LogModuleManager: Shutting down and abandoning module XmlParser (416)
-[2018.02.22-23.08.02:780][741]LogModuleManager: Shutting down and abandoning module Blutility (414)
-[2018.02.22-23.08.02:780][741]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (412)
-[2018.02.22-23.08.02:780][741]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (411)
-[2018.02.22-23.08.02:780][741]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (408)
-[2018.02.22-23.08.02:780][741]LogModuleManager: Shutting down and abandoning module SettingsEditor (406)
-[2018.02.22-23.08.02:780][741]LogModuleManager: Shutting down and abandoning module ProjectLauncher (404)
-[2018.02.22-23.08.02:780][741]LogModuleManager: Shutting down and abandoning module SessionFrontend (402)
-[2018.02.22-23.08.02:780][741]LogModuleManager: Shutting down and abandoning module ProfilerClient (400)
-[2018.02.22-23.08.02:781][741]LogModuleManager: Shutting down and abandoning module DeviceManager (398)
-[2018.02.22-23.08.02:781][741]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (397)
-[2018.02.22-23.08.02:833][741]LogModuleManager: Shutting down and abandoning module AutomationController (394)
-[2018.02.22-23.08.02:833][741]LogModuleManager: Shutting down and abandoning module AutomationWindow (392)
-[2018.02.22-23.08.02:833][741]LogModuleManager: Shutting down and abandoning module Layers (390)
-[2018.02.22-23.08.02:833][741]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (388)
-[2018.02.22-23.08.02:833][741]LogModuleManager: Shutting down and abandoning module DetailCustomizations (386)
-[2018.02.22-23.08.02:833][741]LogModuleManager: Shutting down and abandoning module PackagesDialog (384)
-[2018.02.22-23.08.02:833][741]LogModuleManager: Shutting down and abandoning module Persona (382)
-[2018.02.22-23.08.02:833][741]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (381)
-[2018.02.22-23.08.02:833][741]LogModuleManager: Shutting down and abandoning module AnimGraph (379)
-[2018.02.22-23.08.02:833][741]LogModuleManager: Shutting down and abandoning module Kismet (376)
-[2018.02.22-23.08.02:834][741]LogModuleManager: Shutting down and abandoning module ClassViewer (374)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module Toolbox (372)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module ModuleUI (370)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module MovieSceneTools (368)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module OutputLog (366)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module GammaUI (364)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module Documentation (362)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (360)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module MovieScene (358)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module Niagara (356)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module NiagaraEditor (355)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (352)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module LauncherPlatform (350)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module AnalyticsET (348)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module PortalServices (346)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module PortalRpc (344)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module MessagingRpc (342)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module AIModule (340)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module GameplayDebugger (339)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module AITestSuite (337)
-[2018.02.22-23.08.02:835][741]LogModuleManager: Shutting down and abandoning module ProfilerService (334)
-[2018.02.22-23.08.02:842][741]LogModuleManager: Shutting down and abandoning module TaskGraph (332)
-[2018.02.22-23.08.02:842][741]LogModuleManager: Shutting down and abandoning module SteamVRController (330)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (328)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (326)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module OculusInput (324)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (322)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (320)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module CableComponent (318)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (316)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module AndroidPermission (314)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (310)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module HTML5Networking (308)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module AlembicImporter (306)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module AlembicLibrary (305)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module GeometryCache (304)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (303)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (298)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module PluginBrowser (296)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (294)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (292)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module DesktopPlatform (291)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module UObjectPlugin (288)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (286)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (284)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module GitSourceControl (282)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module SourceControl (281)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (278)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (276)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (274)
-[2018.02.22-23.08.02:843][741]LogModuleManager: Shutting down and abandoning module Paper2DEditor (272)
-[2018.02.22-23.08.02:844][741]LogModuleManager: Shutting down and abandoning module MeshPaint (271)
-[2018.02.22-23.08.02:844][741]LogModuleManager: Shutting down and abandoning module LevelEditor (269)
-[2018.02.22-23.08.02:844][741]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (268)
-[2018.02.22-23.08.02:844][741]LogModuleManager: Shutting down and abandoning module MainFrame (266)
-[2018.02.22-23.08.02:844][741]LogModuleManager: Shutting down and abandoning module HotReload (265)
-[2018.02.22-23.08.02:844][741]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (260)
-[2018.02.22-23.08.02:844][741]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (258)
-[2018.02.22-23.08.02:845][741]LogModuleManager: Shutting down and abandoning module PhysXVehicles (256)
-[2018.02.22-23.08.02:845][741]LogModuleManager: Shutting down and abandoning module OculusEditor (254)
-[2018.02.22-23.08.02:845][741]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (252)
-[2018.02.22-23.08.02:845][741]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (250)
-[2018.02.22-23.08.02:845][741]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (248)
-[2018.02.22-23.08.02:845][741]LogModuleManager: Shutting down and abandoning module UdpMessaging (246)
-[2018.02.22-23.08.02:945][741]LogModuleManager: Shutting down and abandoning module TcpMessaging (244)
-[2018.02.22-23.08.03:046][741]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (242)
-[2018.02.22-23.08.03:046][741]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (240)
-[2018.02.22-23.08.03:046][741]LogModuleManager: Shutting down and abandoning module FacialAnimation (238)
-[2018.02.22-23.08.03:046][741]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (236)
-[2018.02.22-23.08.03:046][741]LogModuleManager: Shutting down and abandoning module GraphEditor (235)
-[2018.02.22-23.08.03:047][741]LogModuleManager: Shutting down and abandoning module ContentBrowser (233)
-[2018.02.22-23.08.03:049][741]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (230)
-[2018.02.22-23.08.03:049][741]LogModuleManager: Shutting down and abandoning module Paper2D (228)
-[2018.02.22-23.08.03:049][741]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (226)
-[2018.02.22-23.08.03:049][741]LogModuleManager: Shutting down and abandoning module WmfMedia (224)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module PacketHandler (222)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (220)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (218)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module Overlay (216)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module OverlayEditor (215)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module MediaAssets (212)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module VREditor (210)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module StringTableEditor (208)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (206)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (204)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module FunctionalTesting (202)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (200)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (199)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module UMG (196)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module UMGEditor (195)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module Sequencer (194)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module MessageLog (191)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module SlateReflector (186)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module Slate (184)
-[2018.02.22-23.08.03:052][741]LogModuleManager: Shutting down and abandoning module EditorStyle (182)
-[2018.02.22-23.08.03:055][741]LogModuleManager: Shutting down and abandoning module MRMesh (180)
-[2018.02.22-23.08.03:055][741]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (178)
-[2018.02.22-23.08.03:055][741]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (176)
-[2018.02.22-23.08.03:055][741]LogModuleManager: Shutting down and abandoning module XAudio2 (174)
-[2018.02.22-23.08.03:055][741]LogModuleManager: Shutting down and abandoning module Networking (172)
-[2018.02.22-23.08.03:055][741]LogModuleManager: Shutting down and abandoning module Core (168)
-[2018.02.22-23.08.03:055][741]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
-[2018.02.22-23.08.03:055][741]LogModuleManager: Shutting down and abandoning module LevelSequence (162)
-[2018.02.22-23.08.03:055][741]LogModuleManager: Shutting down and abandoning module MeshUtilities (160)
-[2018.02.22-23.08.03:056][741]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (159)
-[2018.02.22-23.08.03:056][741]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (158)
-[2018.02.22-23.08.03:056][741]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (157)
-[2018.02.22-23.08.03:056][741]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (155)
-[2018.02.22-23.08.03:056][741]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (153)
-[2018.02.22-23.08.03:056][741]LogModuleManager: Shutting down and abandoning module MaterialBaking (149)
-[2018.02.22-23.08.03:056][741]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (146)
-[2018.02.22-23.08.03:061][741]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
-[2018.02.22-23.08.03:089][741]LogDerivedDataCache: Shutdown
-[2018.02.22-23.08.03:089][741]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
-[2018.02.22-23.08.03:090][741]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module Messaging (101)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
-[2018.02.22-23.08.03:091][741]LogModuleManager: Shutting down and abandoning module InputCore (60)
-[2018.02.22-23.08.03:092][741]LogModuleManager: Shutting down and abandoning module Settings (58)
-[2018.02.22-23.08.03:092][741]LogModuleManager: Shutting down and abandoning module PhysXCooking (56)
-[2018.02.22-23.08.03:092][741]LogModuleManager: Shutting down and abandoning module SteamVR (54)
-[2018.02.22-23.08.03:092][741]LogModuleManager: Shutting down and abandoning module OculusHMD (52)
-[2018.02.22-23.08.03:092][741]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
-[2018.02.22-23.08.03:092][741]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
-[2018.02.22-23.08.03:092][741]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
-[2018.02.22-23.08.03:092][741]LogOnline: Display: Unloading online subsystem: NULL
-[2018.02.22-23.08.03:092][741]LogModuleManager: Shutting down and abandoning module XMPP (43)
-[2018.02.22-23.08.03:092][741]LogModuleManager: Shutting down and abandoning module HTTP (41)
-[2018.02.22-23.08.03:092][741]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2018.02.22-23.08.03:092][741]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B81C9060A-4A42-9723-9377-7C8E681B4268%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.17.1-3586342%2B%2B%2BUE4%2BRelease-4.17&UserID=10a5f4ef40a679439c83d18f41cdf66c%7C7a0fd171ae034bc0b1ce59dbbffb71ee%7Ce2e0c3ca-b3ee-4382-a511-38f8aa77cfaf&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2018.02.22-23.08.03:101][741]LogModuleManager: Shutting down and abandoning module SSL (40)
-[2018.02.22-23.08.03:103][741]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-[2018.02.22-23.08.03:103][741]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-[2018.02.22-23.08.03:103][741]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-[2018.02.22-23.08.03:103][741]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-[2018.02.22-23.08.03:103][741]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-[2018.02.22-23.08.03:103][741]LogModuleManager: Shutting down and abandoning module Landscape (26)
-[2018.02.22-23.08.03:103][741]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-[2018.02.22-23.08.03:106][741]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-[2018.02.22-23.08.03:106][741]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-[2018.02.22-23.08.03:106][741]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-[2018.02.22-23.08.03:106][741]LogModuleManager: Shutting down and abandoning module Renderer (16)
-[2018.02.22-23.08.03:106][741]LogModuleManager: Shutting down and abandoning module Engine (14)
-[2018.02.22-23.08.03:106][741]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-[2018.02.22-23.08.03:106][741]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-[2018.02.22-23.08.03:106][741]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-[2018.02.22-23.08.03:106][741]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2018.02.22-23.08.03:106][741]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2018.02.22-23.08.03:106][741]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2018.02.22-23.08.03:110][741]LogExit: Exiting.
-[2018.02.22-23.08.03:132][741]Log file closed, 02/23/18 00:08:03
+[2018.03.09-22.06.59:808][  0]LogInit: Selected Device Profile: [Windows]
+[2018.03.09-22.06.59:808][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.03.09-22.06.59:817][  0]LogInit: Computer: PAWEL-PC
+[2018.03.09-22.06.59:817][  0]LogInit: User: Pawel
+[2018.03.09-22.06.59:817][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.03.09-22.06.59:817][  0]LogInit: High frequency timer resolution =2.648710 MHz
+[2018.03.09-22.06.59:817][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2018.03.09-22.06.59:817][  0]LogMemory: Platform Memory Stats for Windows
+[2018.03.09-22.06.59:818][  0]LogMemory: Process Physical Memory: 279.79 MB used, 279.79 MB peak
+[2018.03.09-22.06.59:818][  0]LogMemory: Process Virtual Memory: 288.50 MB used, 288.50 MB peak
+[2018.03.09-22.06.59:818][  0]LogMemory: Physical Memory: 5080.56 MB used,  11266.52 MB free, 16347.08 MB total
+[2018.03.09-22.06.59:818][  0]LogMemory: Virtual Memory: 668.61 MB used,  11266.52 MB free, 8388608.00 MB total
+[2018.03.09-22.06.59:964][  0]LogInit: Using OS detected language (pl-PL).
+[2018.03.09-22.06.59:964][  0]LogInit: Using OS detected locale (pl-PL).
+[2018.03.09-22.06.59:966][  0]LogTextLocalizationManager: No localization for 'pl-PL' exists, so 'en' will be used for the language.
+[2018.03.09-22.06.59:966][  0]LogTextLocalizationManager: No localization for 'pl-PL' exists, so 'en' will be used for the locale.
+[2018.03.09-22.07.00:640][  0]LogD3D11RHI: D3D11 adapters:
+[2018.03.09-22.07.00:659][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 750' (Feature Level 11_0)
+[2018.03.09-22.07.00:659][  0]LogD3D11RHI:       1993/0/7917 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2018.03.09-22.07.00:659][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.03.09-22.07.00:664][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.03.09-22.07.00:664][  0]LogD3D11RHI:     GPU DeviceId: 0x1381 (for the marketing name, search the web for "GPU Device Id")
+[2018.03.09-22.07.00:664][  0]LogWindows: EnumDisplayDevices:
+[2018.03.09-22.07.00:664][  0]LogWindows:    0. 'NVIDIA GeForce GTX 750' (P:1 D:1)
+[2018.03.09-22.07.00:664][  0]LogWindows:    1. 'NVIDIA GeForce GTX 750' (P:0 D:0)
+[2018.03.09-22.07.00:664][  0]LogWindows:    2. 'NVIDIA GeForce GTX 750' (P:0 D:0)
+[2018.03.09-22.07.00:664][  0]LogWindows:    3. 'NVIDIA GeForce GTX 750' (P:0 D:0)
+[2018.03.09-22.07.00:664][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2018.03.09-22.07.00:664][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2018.03.09-22.07.00:665][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2018.03.09-22.07.00:665][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2018.03.09-22.07.00:665][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 750
+[2018.03.09-22.07.00:665][  0]LogD3D11RHI:   Driver Version: 388.13 (internal:23.21.13.8813, unified:388.13)
+[2018.03.09-22.07.00:665][  0]LogD3D11RHI:      Driver Date: 10-27-2017
+[2018.03.09-22.07.00:665][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2018.03.09-22.07.00:672][  0]LogD3D11RHI: Async texture creation enabled
+[2018.03.09-22.07.00:705][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.03.09-22.07.00:706][  0]LogShaderCompilers: Guid format shader working directory is -4 characters bigger than the processId version (../../../../../../Users/Pawel/Documents/GitHub/VR/Intermediate/Shaders/WorkingDirectory/11756/).
+[2018.03.09-22.07.00:706][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Pawel/AppData/Local/Temp/UnrealShaderWorkingDir/AA55A4C046034FDC8E0D40B8A59CBAC8/'.
+[2018.03.09-22.07.00:706][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.03.09-22.07.01:576][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.03.09-22.07.01:618][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.03.09-22.07.01:660][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.03.09-22.07.01:708][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.03.09-22.07.01:757][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.03.09-22.07.01:807][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.03.09-22.07.01:849][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.03.09-22.07.01:891][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.03.09-22.07.01:926][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.03.09-22.07.01:970][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.03.09-22.07.02:014][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2018.03.09-22.07.02:055][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2018.03.09-22.07.02:097][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2018.03.09-22.07.02:138][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2018.03.09-22.07.02:179][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2018.03.09-22.07.02:260][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2018.03.09-22.07.02:260][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.03.09-22.07.02:290][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.03.09-22.07.02:372][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.03.09-22.07.02:395][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.03.09-22.07.02:435][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.03.09-22.07.02:476][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.03.09-22.07.02:519][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.03.09-22.07.02:560][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.03.09-22.07.02:560][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.03.09-22.07.02:939][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.03.09-22.07.03:037][  0]LogDerivedDataCache: Loaded boot cache 0.10s 106MB C:/Users/Pawel/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2018.03.09-22.07.03:037][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Pawel/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc
+[2018.03.09-22.07.03:037][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Pawel/Documents/GitHub/VR/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.03.09-22.07.03:037][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.03.09-22.07.03:037][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Pawel/Documents/GitHub/VR/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.03.09-22.07.03:037][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.03.09-22.07.03:056][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.03.09-22.07.03:068][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Pawel/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.03.09-22.07.03:077][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.03.09-22.07.03:078][  0]LogSlate: Using Freetype 2.6.0
+[2018.03.09-22.07.03:078][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.03.09-22.07.03:078][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.03.09-22.07.03:326][  0]LogAssetRegistry: FAssetRegistry took 0.0245 seconds to start up
+[2018.03.09-22.07.03:489][  0]LogInit: Selected Device Profile: [Windows]
+[2018.03.09-22.07.03:492][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2018.03.09-22.07.03:829][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.03.09-22.07.03:861][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.03.09-22.07.03:861][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.03.09-22.07.03:861][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.03.09-22.07.03:861][  0]LogMeshReduction: No automatic mesh merging module available
+[2018.03.09-22.07.03:861][  0]LogMeshMerging: No automatic mesh merging module available
+[2018.03.09-22.07.04:214][  0]LogNetVersion: VRProject , NetCL: 3573198, EngineNetVer: 2, GameNetVer: 0 (Checksum: 2701897489)
+[2018.03.09-22.07.04:390][  0]LogPackageLocalizationCache: Processed 5 localized package path(s) for 1 prioritized culture(s) in 0.022278 seconds
+[2018.03.09-22.07.04:396][  0]LogUObjectArray: 35825 objects as part of root set at end of initial load.
+[2018.03.09-22.07.04:396][  0]LogUObjectAllocator: 7529112 out of 0 bytes used by permanent object pool.
+[2018.03.09-22.07.04:396][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.03.09-22.07.04:439][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.03.09-22.07.06:602][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.03.09-22.07.06:632][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.03.09-22.07.07:121][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.03.09-22.07.07:453][  0]SourceControl: Source control is disabled
+[2018.03.09-22.07.07:454][  0]SourceControl: Source control is disabled
+[2018.03.09-22.07.07:489][  0]SourceControl: Source control is disabled
+[2018.03.09-22.07.07:523][  0]SourceControl: Source control is disabled
+[2018.03.09-22.07.07:968][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.03.09-22.07.08:141][  0]LogOcInput: OculusInput pre-init called
+[2018.03.09-22.07.08:355][  0]LogEngine: Initializing Engine...
+[2018.03.09-22.07.08:357][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.03.09-22.07.08:602][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.03.09-22.07.08:602][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.03.09-22.07.08:699][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.03.09-22.07.08:721][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2018.03.09-22.07.08:733][  0]LogInit: FAudioDevice initialized.
+[2018.03.09-22.07.09:049][  0]LogDerivedDataCache: Saved boot cache 0.32s 93MB C:/Users/Pawel/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2018.03.09-22.07.09:057][  0]LogInit: Texture streaming: Enabled
+[2018.03.09-22.07.09:138][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.03.09-22.07.09:304][  0]LogInit: Transaction tracking system initialized
+[2018.03.09-22.07.09:542][  0]BlueprintLog: New page: Editor Load
+[2018.03.09-22.07.10:228][  0]LocalizationService: Localization service is disabled
+[2018.03.09-22.07.10:747][  0]LogConsoleResponse: Display: 
+[2018.03.09-22.07.10:913][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.03.09-22.07.10:913][  0]LogCook: Display: Mobile HDR setting 1
+[2018.03.09-22.07.10:913][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.03.09-22.07.11:647][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Pawel/Documents/GitHub/VR/Content/' took 0.01s
+[2018.03.09-22.07.11:682][  0]SourceControl: Source control is disabled
+[2018.03.09-22.07.11:682][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Pawel/Documents/GitHub/VR/Content/VRProject.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.03.09-22.07.11:683][  0]LightingResults: New page: Lighting Build
+[2018.03.09-22.07.11:714][  0]MapCheck: New page: Map Check
+[2018.03.09-22.07.11:714][  0]LightingResults: New page: Lighting Build
+[2018.03.09-22.07.12:833][  0]LogAIModule: Creating AISystem for world VRProject
+[2018.03.09-22.07.12:911][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.03.09-22.07.12:930][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.03.09-22.07.12:974][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 44.285ms to complete.
+[2018.03.09-22.07.12:974][  0]LogFileHelpers: Loading map 'VRProject' took 1.292
+[2018.03.09-22.07.13:106][  0]LogCollectionManager: Loaded 0 collections in 0.001528 seconds
+[2018.03.09-22.07.13:176][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Pawel/Documents/GitHub/VR/Saved/Collections/' took 0.01s
+[2018.03.09-22.07.13:176][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Pawel/Documents/GitHub/VR/Content/Developers/Pawel/Collections/' took 0.01s
+[2018.03.09-22.07.13:176][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Pawel/Documents/GitHub/VR/Content/Collections/' took 0.01s
+[2018.03.09-22.07.13:176][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2018.03.09-22.07.13:184][  0]LogContentBrowser: Native class hierarchy populated in 0.0082 seconds. Added 2386 classes and 500 folders.
+[2018.03.09-22.07.13:235][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2018.03.09-22.07.13:266][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2018.03.09-22.07.13:299][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2018.03.09-22.07.13:321][  0]LogSlate: Took 0.000113 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.03.09-22.07.13:323][  0]LogSlate: Took 0.000184 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.03.09-22.07.13:329][  0]LogSlate: Took 0.000123 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.03.09-22.07.13:530][  0]LogRenderer: Reallocating scene render targets to support 1056x556 Format 26 NumSamples 1 (Frame:1).
+[2018.03.09-22.07.13:591][  0]LogSlate: Took 0.000102 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.03.09-22.07.13:713][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2018.03.09-22.07.13:713][  0]LogLoad: (Engine Initialization) Total time: 15.21 seconds
+[2018.03.09-22.07.13:713][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.03.09-22.07.13:714][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2018.03.09-22.07.13:714][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2018.03.09-22.07.14:073][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.03.09-22.07.14:393][  1]LogAssetRegistry: Asset discovery search completed in 11.0865 seconds
+[2018.03.09-22.07.14:396][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.03.09-22.07.14:396][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000104 seconds (updated 0 objects)
+[2018.03.09-22.07.15:056][  3]LogSlate: Took 0.000157 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.03.09-22.08.03:427][877]LogEditorViewport: Clicking on Actor (LMB): SlideDoor_C (SlideDoor)
+[2018.03.09-22.08.16:499][724]LogSlate: Took 0.000101 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.03.09-22.08.16:838][724]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0010 seconds. Added 113 classes and 0 folders.
+[2018.03.09-22.08.17:504][724]LogSlate: Took 0.000091 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.03.09-22.08.17:573][724]LogSlate: Took 0.000133 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.03.09-22.08.17:664][725]LogSlate: Took 0.000136 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.03.09-22.08.32:473][929]BlueprintLog: New page: Compile SlideDoor
+[2018.03.09-22.08.33:205][954]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MojeBlueprinty/SlideDoor" FILE="../../../../../../Users/Pawel/Documents/GitHub/VR/Content/MojeBlueprinty/SlideDoor.uasset" SILENT=true
+[2018.03.09-22.08.33:320][954]LogSavePackage: Save=46.85ms
+[2018.03.09-22.08.33:321][954]LogSavePackage: Moving '../../../../../../Users/Pawel/Documents/GitHub/VR/Saved/SlideDoorA50980074EC5E2BD5910BBAC8F58F534.tmp' to '../../../../../../Users/Pawel/Documents/GitHub/VR/Content/MojeBlueprinty/SlideDoor.uasset'
+[2018.03.09-22.08.33:325][954]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Pawel/Documents/GitHub/VR/Content/MojeBlueprinty/SlideDoor.uasset
+[2018.03.09-22.08.38:052][497]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.09-22.08.38:105][497]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.09-22.08.38:105][497]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.09-22.08.38:105][497]PIE: New page: PIE session: VRProject (Mar 10, 2018, 12:08:38 AM)
+[2018.03.09-22.08.38:105][497]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
+[2018.03.09-22.08.38:128][497]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022573s)
+[2018.03.09-22.08.38:128][497]LogAIModule: Creating AISystem for world VRProject
+[2018.03.09-22.08.38:128][497]LogPlayLevel: PIE: World Init took: (0.000598s)
+[2018.03.09-22.08.38:129][497]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.023803s)
+[2018.03.09-22.08.38:153][497]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2018.03.09-22.08.38:162][497]LogInit: FAudioDevice initialized.
+[2018.03.09-22.08.38:215][497]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.03.09-22.08.38:228][497]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.03.09-23.08.38
+[2018.03.09-22.08.38:229][497]LogWorld: Bringing up level for play took: 0.012001
+[2018.03.09-22.08.38:262][497]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 11 classes and 0 folders.
+[2018.03.09-22.08.38:264][497]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject 0.45
+[2018.03.09-22.08.38:264][497]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.09-22.08.39:383][627]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.09-22.08.39:434][627]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.09-22.08.41:277][814]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (PlayerStart)
+[2018.03.09-22.08.42:743][960]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.08.45:336][196]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.08.46:561][339]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.08.48:904][537]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.08.51:180][686]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.08.52:821][807]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.08.55:391][ 44]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.08.57:747][276]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.09.02:545][723]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.09.41:881][ 49]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.09-22.09.41:902][ 49]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.09-22.09.41:902][ 49]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.09-22.09.41:902][ 49]PIE: New page: PIE session: VRProject (Mar 10, 2018, 12:09:41 AM)
+[2018.03.09-22.09.41:902][ 49]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
+[2018.03.09-22.09.41:925][ 49]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022304s)
+[2018.03.09-22.09.41:925][ 49]LogAIModule: Creating AISystem for world VRProject
+[2018.03.09-22.09.41:926][ 49]LogPlayLevel: PIE: World Init took: (0.000737s)
+[2018.03.09-22.09.41:926][ 49]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.023431s)
+[2018.03.09-22.09.41:952][ 49]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2018.03.09-22.09.41:962][ 49]LogInit: FAudioDevice initialized.
+[2018.03.09-22.09.41:993][ 49]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.03.09-22.09.42:004][ 49]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.03.09-23.09.42
+[2018.03.09-22.09.42:005][ 49]LogWorld: Bringing up level for play took: 0.011081
+[2018.03.09-22.09.42:007][ 49]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject 0.187
+[2018.03.09-22.09.42:008][ 49]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.09-22.10.16:143][834]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.09-22.10.16:191][834]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.09-22.10.18:095][ 10]LogEditorViewport: Clicking on Actor (LMB): SlideDoor_C (SlideDoor)
+[2018.03.09-22.10.31:727][442]BlueprintLog: New page: Compile SlideDoor
+[2018.03.09-22.10.32:505][473]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MojeBlueprinty/SlideDoor" FILE="../../../../../../Users/Pawel/Documents/GitHub/VR/Content/MojeBlueprinty/SlideDoor.uasset" SILENT=true
+[2018.03.09-22.10.32:619][473]LogSavePackage: Save=46.75ms
+[2018.03.09-22.10.32:619][473]LogSavePackage: Moving '../../../../../../Users/Pawel/Documents/GitHub/VR/Saved/SlideDoor41F47D2E408CA05FC0B194A2824F31F6.tmp' to '../../../../../../Users/Pawel/Documents/GitHub/VR/Content/MojeBlueprinty/SlideDoor.uasset'
+[2018.03.09-22.10.32:644][473]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Pawel/Documents/GitHub/VR/Content/MojeBlueprinty/SlideDoor.uasset
+[2018.03.09-22.10.45:543][ 92]Cmd: TRANSACTION UNDO
+[2018.03.09-22.10.45:543][ 92]LogEditorTransaction: Undo Edit Custom Location
+[2018.03.09-22.10.45:554][ 92]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.SlideDoor_C_2.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
+[2018.03.09-22.10.46:851][208]Cmd: TRANSACTION UNDO
+[2018.03.09-22.10.46:851][208]LogEditorTransaction: Undo Move Actors
+[2018.03.09-22.10.48:324][352]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.09-22.10.48:345][352]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.09-22.10.48:345][352]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.09-22.10.48:345][352]PIE: New page: PIE session: VRProject (Mar 10, 2018, 12:10:48 AM)
+[2018.03.09-22.10.48:345][352]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
+[2018.03.09-22.10.48:367][352]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021490s)
+[2018.03.09-22.10.48:368][352]LogAIModule: Creating AISystem for world VRProject
+[2018.03.09-22.10.48:368][352]LogPlayLevel: PIE: World Init took: (0.000717s)
+[2018.03.09-22.10.48:368][352]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.022530s)
+[2018.03.09-22.10.48:392][352]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2018.03.09-22.10.48:402][352]LogInit: FAudioDevice initialized.
+[2018.03.09-22.10.48:434][352]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.03.09-22.10.48:444][352]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.03.09-23.10.48
+[2018.03.09-22.10.48:445][352]LogWorld: Bringing up level for play took: 0.010462
+[2018.03.09-22.10.48:447][352]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject 0.62
+[2018.03.09-22.10.48:447][352]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.09-22.10.53:573][929]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.09-22.10.53:627][929]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.09-22.12.27:629][708]LogEditorViewport: Clicking on Actor (LMB): Light_C (Light119)
+[2018.03.09-22.13.29:099][785]LogEditorViewport: Clicking on Actor (LMB): Door_C (DoorSalon2)
+[2018.03.09-22.13.35:745][379]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (PlayerStart)
+[2018.03.09-22.13.38:902][650]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.13.41:832][934]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.13.44:162][135]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.13.48:475][554]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.13.50:229][751]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.13.51:642][914]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.13.55:555][286]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.13.57:470][429]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.14.00:473][714]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.14.01:276][807]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.03.09-22.14.20:164][324]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="../../../../../../Users/Pawel/Documents/GitHub/VR/Content/VRProject.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.03.09-22.14.20:837][324]LogSavePackage: Save=584.79ms
+[2018.03.09-22.14.20:837][324]LogSavePackage: Moving '../../../../../../Users/Pawel/Documents/GitHub/VR/Saved/VRProject277F62B24FF0706E76E80B8C575E211D.tmp' to '../../../../../../Users/Pawel/Documents/GitHub/VR/Content/VRProject.umap'
+[2018.03.09-22.14.20:842][324]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Pawel/Documents/GitHub/VR/Content/VRProject.umap
+[2018.03.09-22.14.20:882][324]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject_BuiltData" FILE="../../../../../../Users/Pawel/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset" SILENT=true
+[2018.03.09-22.14.21:244][324]LogSavePackage: Save=269.69ms
+[2018.03.09-22.14.21:244][324]LogSavePackage: Moving '../../../../../../Users/Pawel/Documents/GitHub/VR/Saved/VRProject_BuiltDataF15BD71548F7406C06B88EAE19369D91.tmp' to '../../../../../../Users/Pawel/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset'
+[2018.03.09-22.14.21:248][324]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Pawel/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset
