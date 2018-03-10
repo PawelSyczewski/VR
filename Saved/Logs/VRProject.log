@@ -1945,3 +1945,540 @@ LogInit: Object subsystem initialized
 [2018.03.10-22.30.35:491][289]LogSavePackage: Save=278.75ms
 [2018.03.10-22.30.35:491][289]LogSavePackage: Moving 'C:/Users/Goof/Documents/GitHub/VR/Saved/TexturesCom_TilesOrnate0210_3_seDDB7FF6842C61BCAD744FCB793FAB341.tmp' to 'C:/Users/Goof/Documents/GitHub/VR/Content/MojeTekstury/TexturesCom_TilesOrnate0210_3_seamless_S.uasset'
 [2018.03.10-22.30.35:493][289]LogSavePackage: Display: Finished SavePackage C:/Users/Goof/Documents/GitHub/VR/Content/MojeTekstury/TexturesCom_TilesOrnate0210_3_seamless_S.uasset
+[2018.03.10-22.33.21:919][217]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.10-22.33.21:949][217]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.33.21:949][217]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.10-22.33.21:949][217]PIE: New page: PIE session: VRProject (Mar 11, 2018, 12:33:21 AM)
+[2018.03.10-22.33.21:950][217]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
+[2018.03.10-22.33.21:988][217]LogPlayLevel: PIE: StaticDuplicateObject took: (0.037904s)
+[2018.03.10-22.33.21:989][217]LogAIModule: Creating AISystem for world VRProject
+[2018.03.10-22.33.21:989][217]LogPlayLevel: PIE: World Init took: (0.001397s)
+[2018.03.10-22.33.21:990][217]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.039927s)
+[2018.03.10-22.33.22:017][217]LogInit: XAudio2 using 'Głośniki (3 — USB PnP Sound Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.10-22.33.22:028][217]LogInit: FAudioDevice initialized.
+[2018.03.10-22.33.22:058][217]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.03.10-22.33.22:082][217]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.03.10-23.33.22
+[2018.03.10-22.33.22:083][217]LogWorld: Bringing up level for play took: 0.023565
+[2018.03.10-22.33.22:086][217]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject -0.099
+[2018.03.10-22.33.22:087][217]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.35.55:621][285]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.35.55:669][285]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.43.25:589][ 96]MapCheck: New page: Map Check
+[2018.03.10-22.43.25:631][ 96]Cmd: MAP REBUILD ALLVISIBLE
+[2018.03.10-22.43.25:631][ 96]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2018.03.10-22.43.25:873][ 96]LightingResults: New page: Lighting Build - Mar 11, 2018, 12:43:25 AM
+[2018.03.10-22.43.26:552][ 96]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2018.03.10-22.43.26:886][ 96]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2018.03.10-22.43.27:157][ 96]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2018.03.10-22.43.30:227][ 96]LogSwarmInterface: Error: [TryOpenConnection] Waiting for the agent to start up ...
+[2018.03.10-22.43.30:300][ 96]LogSwarmInterface: Error: System.Net.Sockets.SocketException (0x80004005): Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia 127.0.0.1:8008
+
+Server stack trace: 
+   w System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   w System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   w System.Runtime.Remoting.Channels.RemoteConnection.CreateNewSocket(EndPoint ipEndPoint)
+   w System.Runtime.Remoting.Channels.SocketCache.GetSocket(String machinePortAndSid, Boolean openNew)
+   w System.Runtime.Remoting.Channels.Tcp.TcpClientTransportSink.SendRequestWithRetry(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream)
+   w System.Runtime.Remoting.Channels.Tcp.TcpClientTransportSink.AsyncProcessRequest(IClientChannelSinkStack sinkStack, IMessage msg, ITransportHeaders headers, Stream stream)
+   w System.Runtime.Remoting.Channels.BinaryClientFormatterSink.AsyncProcessMessage(IMessage msg, IMessageSink replySink)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w NSwarm.IAgentInterfaceWrapper.MethodDelegate.EndInvoke(Hashtable& OutParameters, IAsyncResult result)
+   w NSwarm.FSwarmInterface.TryOpenConnection(FConnectionCallback CallbackFunc, IntPtr CallbackData, ELogFlags LoggingFlags)
+[2018.03.10-22.43.35:362][ 96]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2018.03.10-22.43.35:363][ 96]LogSwarmInterface: [TryOpenConnection] Local Process ID is 15180
+[2018.03.10-22.43.40:201][ 96]LogStaticLightingSystem: Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2018.03.10-22.43.40:266][ 96]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2018.03.10-22.43.40:266][ 96]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2018.03.10-22.43.40:266][ 96]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2018.03.10-22.43.40:266][ 96]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2018.03.10-22.43.40:266][ 96]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2018.03.10-22.43.40:815][ 96]LogEditorBuildUtils: Build time 0:15
+[2018.03.10-22.43.40:842][ 96]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer TexturesCom_BrickOldMixedSize0056_7_seamless_Mat, compiling. 
+[2018.03.10-22.43.40:862][ 96]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer TexturesCom_BrickOldMixedSize0056_7_seamless_Mat, compiling. 
+[2018.03.10-22.43.40:898][ 97]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer table, compiling. 
+[2018.03.10-22.43.40:912][ 97]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer table, compiling. 
+[2018.03.10-22.43.40:984][ 98]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Frame, compiling. 
+[2018.03.10-22.43.40:995][ 98]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Frame, compiling. 
+[2018.03.10-22.43.41:028][ 99]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Door, compiling. 
+[2018.03.10-22.43.41:039][ 99]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Door, compiling. 
+[2018.03.10-22.43.41:080][100]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Glass, compiling. 
+[2018.03.10-22.43.41:093][100]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Glass, compiling. 
+[2018.03.10-22.43.41:126][101]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer podloga3, compiling. 
+[2018.03.10-22.43.41:138][101]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer podloga3, compiling. 
+[2018.03.10-22.43.41:176][102]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer obrazLovecraft, compiling. 
+[2018.03.10-22.43.41:193][102]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer obrazLovecraft, compiling. 
+[2018.03.10-22.43.41:225][103]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer obraz1, compiling. 
+[2018.03.10-22.43.41:238][103]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer obraz1, compiling. 
+[2018.03.10-22.43.41:271][104]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer obraz2, compiling. 
+[2018.03.10-22.43.41:285][104]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer obraz2, compiling. 
+[2018.03.10-22.43.41:319][105]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_CobbleStone_Smooth, compiling. 
+[2018.03.10-22.43.41:355][105]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_CobbleStone_Smooth, compiling. 
+[2018.03.10-22.43.41:388][106]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer obraz3, compiling. 
+[2018.03.10-22.43.41:407][106]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer obraz3, compiling. 
+[2018.03.10-22.43.41:440][107]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer biurko, compiling. 
+[2018.03.10-22.43.41:456][107]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer biurko, compiling. 
+[2018.03.10-22.43.41:496][108]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer skrzyniaPodstawa, compiling. 
+[2018.03.10-22.43.41:522][108]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer skrzyniaPodstawa, compiling. 
+[2018.03.10-22.43.41:582][109]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer bookShelfMaterial, compiling. 
+[2018.03.10-22.43.41:607][109]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer bookShelfMaterial, compiling. 
+[2018.03.10-22.43.41:735][110]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer WorldGridMaterial, compiling. Is special engine material.
+[2018.03.10-22.43.41:755][110]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer WorldGridMaterial, compiling. Is special engine material.
+[2018.03.10-22.43.41:782][111]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer torch, compiling. 
+[2018.03.10-22.43.41:798][111]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer torch, compiling. 
+[2018.03.10-22.43.41:830][112]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer books1, compiling. 
+[2018.03.10-22.43.41:846][112]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer books1, compiling. 
+[2018.03.10-22.43.41:875][113]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer books2, compiling. 
+[2018.03.10-22.43.41:888][113]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer books2, compiling. 
+[2018.03.10-22.43.41:914][114]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer skrzyniaWieko, compiling. 
+[2018.03.10-22.43.41:926][114]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer skrzyniaWieko, compiling. 
+[2018.03.10-22.43.51:285][116]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="C:/Users/Goof/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto6.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2018.03.10-22.43.52:368][116]LogSavePackage: Save=895.31ms
+[2018.03.10-22.43.52:369][116]LogSavePackage: Moving 'C:/Users/Goof/Documents/GitHub/VR/Saved/VRProject_Auto6E639084A41DF2854F4AFCBB5F53E6F91.tmp' to 'C:/Users/Goof/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto6.umap'
+[2018.03.10-22.43.52:370][116]LogSavePackage: Display: Finished SavePackage C:/Users/Goof/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto6.umap
+[2018.03.10-22.43.52:373][116]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VRProject' took 1.117
+[2018.03.10-22.43.52:373][116]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.117
+[2018.03.10-22.44.03:863][529]LightingResults: Warning: biurko Object has overlapping UVs.
+[2018.03.10-22.44.03:864][529]LightingResults: biurko Lightmap UV are overlapping by 1.2%. Please adjust content - Enable Error Coloring to visualize.
+[2018.03.10-22.44.20:863][580]Job is a success!
+[2018.03.10-22.44.21:369][581]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.027s
+[2018.03.10-22.44.21:369][581]LogVolumetricLightmapImport:      Indirection Texture 16x16x16 = 0.0Mb
+[2018.03.10-22.44.21:369][581]LogVolumetricLightmapImport:      BrickData 35x5x5 = 0.0Mb
+[2018.03.10-22.44.21:369][581]LogVolumetricLightmapImport:      Bricks at Level
+[2018.03.10-22.44.21:369][581]LogVolumetricLightmapImport:          0: 14.3% covering 100.0% of volume
+[2018.03.10-22.44.21:369][581]LogVolumetricLightmapImport:          1: 85.7% covering 9.4% of volume
+[2018.03.10-22.44.21:369][581]LogVolumetricLightmapImport:          2: 0.0% covering 0.0% of volume
+[2018.03.10-22.44.21:589][581]LogMaterial: Warning: Material /Game/MojeMaterialy/skrzyniaWieko.skrzyniaWieko needed to have new flag set bUsedWithStaticLighting !
+[2018.03.10-22.44.21:599][581]LogMaterial: Missing cached shader map for material skrzyniaWieko, compiling. 
+[2018.03.10-22.44.23:459][581]LogTexture: Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 1024X1024)
+[2018.03.10-22.44.23:460][581]LogTexture: Display: Building textures: LQ_Lightmap_1_1 (DXT1, 1024X1024)
+[2018.03.10-22.44.23:460][581]LogTexture: Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 256X256)
+[2018.03.10-22.44.23:460][581]LogTexture: Display: Building textures: LQ_Lightmap_1_2 (DXT1, 256X256)
+[2018.03.10-22.44.23:460][581]LogTexture: Display: Building textures: HQ_Lightmap1_3 (AutoDXT, 1024X1024)
+[2018.03.10-22.44.23:460][581]LogTexture: Display: Building textures: LQ_Lightmap_1_3 (DXT1, 1024X1024)
+[2018.03.10-22.44.23:569][581]LogTexture: Display: Building textures: ShadowMapTexture2D_0 (G8, 1024X128)
+[2018.03.10-22.44.23:947][581]Lightmass on GOOFY: 28.2 sec total, 317 ms importing, 67 ms setup, 2.93 sec photons, 24.5 sec processing, 0 ms extra exporting [203/203 mappings]. Threads: 2:51 min total, 1:59 min processing.
+[2018.03.10-22.44.24:101][581]LogStaticLightingSystem: Illumination: 57.8 sec (1.72 sec encoding lightmaps, 104 ms encoding shadowmaps)
+[2018.03.10-22.44.24:102][581]LogStaticLightingSystem: Lightmap texture memory:  4.1 MB (4.0 MB streaming, 0.1 MB non-streaming), 6 textures
+[2018.03.10-22.44.24:102][581]LogStaticLightingSystem: Shadowmap texture memory: 0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 1 textures
+[2018.03.10-22.44.30:162][581]DumpUnbuiltLightIteractions
+[2018.03.10-22.44.30:162][581]Lights with unbuilt interactions: 0
+[2018.03.10-22.44.30:162][581]
+[2018.03.10-22.44.30:162][581]Primitives with unbuilt interactions: 0
+[2018.03.10-22.44.30:209][582]Cmd: MAP CHECK NOTIFYRESULTS
+[2018.03.10-22.44.30:209][582]MapCheck: New page: VRProject - Mar 11, 2018, 12:44:30 AM
+[2018.03.10-22.44.30:235][582]MapCheck: Error: Cube10_98 Cube10_98 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:235][582]MapCheck: Error: Cube11 Cube11 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:235][582]MapCheck: Error: Cube12_128 Cube12_128 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:236][582]MapCheck: Error: Cube14 Cube14 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:236][582]MapCheck: Error: Cube15 Cube15 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:236][582]MapCheck: Error: Cube17 Cube17 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:236][582]MapCheck: Error: Cube18 Cube18 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:236][582]MapCheck: Error: Cube19 Cube19 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:236][582]MapCheck: Error: Cube20 Cube20 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:237][582]MapCheck: Error: Cube21_179 Cube21_179 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:237][582]MapCheck: Error: Cube23 Cube23 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:248][582]MapCheck: Error: Cube24 Cube24 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:248][582]MapCheck: Error: Cube25 Cube25 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:248][582]MapCheck: Error: Cube26 Cube26 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:248][582]MapCheck: Error: Cube27 Cube27 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:249][582]MapCheck: Error: Cube28 Cube28 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:249][582]MapCheck: Error: Cube29 Cube29 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:249][582]MapCheck: Error: Cube2_29 Cube2_29 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:249][582]MapCheck: Error: Cube30 Cube30 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:249][582]MapCheck: Error: Cube31 Cube31 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:249][582]MapCheck: Error: Cube32 Cube32 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:250][582]MapCheck: Error: Cube33 Cube33 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:250][582]MapCheck: Error: Cube34 Cube34 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:250][582]MapCheck: Error: Cube35_2 Cube35_2 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:250][582]MapCheck: Error: Cube36 Cube36 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:250][582]MapCheck: Error: Cube37 Cube37 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:250][582]MapCheck: Error: Cube38 Cube38 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:250][582]MapCheck: Error: Cube39 Cube39 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:251][582]MapCheck: Error: Cube3_31 Cube3_31 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:251][582]MapCheck: Error: Cube4_33 Cube4_33 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:251][582]MapCheck: Error: Cube5 Cube5 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:251][582]MapCheck: Error: Cube59 Cube59 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:251][582]MapCheck: Error: Cube60 Cube60 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:251][582]MapCheck: Error: Cube61 Cube61 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:252][582]MapCheck: Error: Cube62 Cube62 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:252][582]MapCheck: Error: Cube63 Cube63 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:252][582]MapCheck: Error: Cube64 Cube64 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:252][582]MapCheck: Error: Cube65 Cube65 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:252][582]MapCheck: Error: Cube66 Cube66 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:252][582]MapCheck: Error: Cube6_39 Cube6_39 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:253][582]MapCheck: Error: Cube7 Cube7 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:253][582]MapCheck: Error: Cube8 Cube8 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:253][582]MapCheck: Error: Cube9 Cube9 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:253][582]MapCheck: Error: Cube_27 Cube_27 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:253][582]MapCheck: Error: Floor10 Floor10 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:253][582]MapCheck: Error: Floor2 Floor2 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:254][582]MapCheck: Error: Floor4 Floor4 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:254][582]MapCheck: Error: Floor6 Floor6 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:254][582]MapCheck: Error: Floor7 Floor7 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:254][582]MapCheck: Error: Floor8 Floor8 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:254][582]MapCheck: Error: Floor9 Floor9 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:255][582]MapCheck: Error: Floor_89 Floor_89 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-22.44.30:273][582]MapCheck: Warning: ChestTop_2170 Static mesh actor has NULL StaticMesh property 
+[2018.03.10-22.44.30:273][582]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
+[2018.03.10-22.44.30:273][582]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
+[2018.03.10-22.44.30:273][582]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
+[2018.03.10-22.44.30:492][582]MapCheck: Map check complete: 52 Error(s), 4 Warning(s), took 283.174ms to complete.
+[2018.03.10-22.45.05:950][417]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.10-22.45.05:981][417]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.45.05:981][417]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.10-22.45.05:981][417]PIE: New page: PIE session: VRProject (Mar 11, 2018, 12:45:05 AM)
+[2018.03.10-22.45.05:982][417]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
+[2018.03.10-22.45.06:023][417]LogPlayLevel: PIE: StaticDuplicateObject took: (0.041459s)
+[2018.03.10-22.45.06:024][417]LogAIModule: Creating AISystem for world VRProject
+[2018.03.10-22.45.06:024][417]LogPlayLevel: PIE: World Init took: (0.000975s)
+[2018.03.10-22.45.06:025][417]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.042914s)
+[2018.03.10-22.45.06:054][417]LogInit: XAudio2 using 'Głośniki (3 — USB PnP Sound Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.10-22.45.06:067][417]LogInit: FAudioDevice initialized.
+[2018.03.10-22.45.06:107][417]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.03.10-22.45.06:133][417]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.03.10-23.45.06
+[2018.03.10-22.45.06:136][417]LogWorld: Bringing up level for play took: 0.028542
+[2018.03.10-22.45.06:141][417]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject -0.044
+[2018.03.10-22.45.06:142][417]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.45.31:091][873]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.45.31:139][873]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.46.46:571][986]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight3)
+[2018.03.10-22.46.49:081][188]Cmd: EDIT COPY
+[2018.03.10-22.46.50:072][266]Cmd: EDIT PASTE
+[2018.03.10-22.47.04:531][400]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight4)
+[2018.03.10-22.47.06:287][542]Cmd: EDIT COPY
+[2018.03.10-22.47.07:084][611]Cmd: EDIT PASTE
+[2018.03.10-22.47.12:775][ 82]Cmd: EDIT PASTE
+[2018.03.10-22.47.21:659][771]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight4)
+[2018.03.10-22.47.23:559][922]Cmd: EDIT COPY
+[2018.03.10-22.47.24:284][985]Cmd: EDIT PASTE
+[2018.03.10-22.47.35:244][849]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.10-22.47.35:270][849]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.47.35:270][849]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.10-22.47.35:271][849]PIE: New page: PIE session: VRProject (Mar 11, 2018, 12:47:35 AM)
+[2018.03.10-22.47.35:271][849]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
+[2018.03.10-22.47.35:310][849]LogPlayLevel: PIE: StaticDuplicateObject took: (0.038465s)
+[2018.03.10-22.47.35:310][849]LogAIModule: Creating AISystem for world VRProject
+[2018.03.10-22.47.35:311][849]LogPlayLevel: PIE: World Init took: (0.001083s)
+[2018.03.10-22.47.35:311][849]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.040054s)
+[2018.03.10-22.47.35:338][849]LogInit: XAudio2 using 'Głośniki (3 — USB PnP Sound Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.10-22.47.35:349][849]LogInit: FAudioDevice initialized.
+[2018.03.10-22.47.35:382][849]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.03.10-22.47.35:406][849]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.03.10-23.47.35
+[2018.03.10-22.47.35:409][849]LogWorld: Bringing up level for play took: 0.025485
+[2018.03.10-22.47.35:414][849]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject -0.772
+[2018.03.10-22.47.35:414][849]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.48.03:654][ 12]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.48.03:705][ 12]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.48.16:722][255]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight6)
+[2018.03.10-22.48.18:200][370]Cmd: DELETE
+[2018.03.10-22.48.18:200][370]Cmd: ACTOR DELETE
+[2018.03.10-22.48.18:221][370]LogEditorActor: Deleted Actor: SpotLight
+[2018.03.10-22.48.18:240][370]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2018.03.10-22.48.21:310][704]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight4)
+[2018.03.10-22.48.24:555][962]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.10-22.48.24:585][962]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.48.24:586][962]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.10-22.48.24:586][962]PIE: New page: PIE session: VRProject (Mar 11, 2018, 12:48:24 AM)
+[2018.03.10-22.48.24:586][962]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
+[2018.03.10-22.48.24:625][962]LogPlayLevel: PIE: StaticDuplicateObject took: (0.038562s)
+[2018.03.10-22.48.24:626][962]LogAIModule: Creating AISystem for world VRProject
+[2018.03.10-22.48.24:626][962]LogPlayLevel: PIE: World Init took: (0.000921s)
+[2018.03.10-22.48.24:626][962]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.040026s)
+[2018.03.10-22.48.24:653][962]LogInit: XAudio2 using 'Głośniki (3 — USB PnP Sound Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.10-22.48.24:667][962]LogInit: FAudioDevice initialized.
+[2018.03.10-22.48.24:704][962]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.03.10-22.48.24:730][962]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.03.10-23.48.24
+[2018.03.10-22.48.24:733][962]LogWorld: Bringing up level for play took: 0.028235
+[2018.03.10-22.48.24:737][962]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject 0.551
+[2018.03.10-22.48.24:737][962]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.49.16:745][205]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.49.16:796][205]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.49.27:994][285]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight4)
+[2018.03.10-22.49.32:734][650]Cmd: EDIT COPY
+[2018.03.10-22.49.33:236][693]Cmd: EDIT PASTE
+[2018.03.10-22.49.41:173][348]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.10-22.49.41:200][348]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.49.41:200][348]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.10-22.49.41:200][348]PIE: New page: PIE session: VRProject (Mar 11, 2018, 12:49:41 AM)
+[2018.03.10-22.49.41:201][348]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
+[2018.03.10-22.49.41:237][348]LogPlayLevel: PIE: StaticDuplicateObject took: (0.035817s)
+[2018.03.10-22.49.41:237][348]LogAIModule: Creating AISystem for world VRProject
+[2018.03.10-22.49.41:238][348]LogPlayLevel: PIE: World Init took: (0.001004s)
+[2018.03.10-22.49.41:238][348]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.037406s)
+[2018.03.10-22.49.41:263][348]LogInit: XAudio2 using 'Głośniki (3 — USB PnP Sound Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.10-22.49.41:275][348]LogInit: FAudioDevice initialized.
+[2018.03.10-22.49.41:311][348]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.03.10-22.49.41:337][348]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.03.10-23.49.41
+[2018.03.10-22.49.41:339][348]LogWorld: Bringing up level for play took: 0.026718
+[2018.03.10-22.49.41:342][348]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject -0.843
+[2018.03.10-22.49.41:342][348]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.50.15:216][ 63]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.50.15:266][ 63]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.50.25:397][728]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.10-22.50.25:427][728]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.50.25:427][728]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.10-22.50.25:427][728]PIE: New page: PIE session: VRProject (Mar 11, 2018, 12:50:25 AM)
+[2018.03.10-22.50.25:428][728]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
+[2018.03.10-22.50.25:470][728]LogPlayLevel: PIE: StaticDuplicateObject took: (0.042403s)
+[2018.03.10-22.50.25:471][728]LogAIModule: Creating AISystem for world VRProject
+[2018.03.10-22.50.25:471][728]LogPlayLevel: PIE: World Init took: (0.001118s)
+[2018.03.10-22.50.25:472][728]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.044150s)
+[2018.03.10-22.50.25:499][728]LogInit: XAudio2 using 'Głośniki (3 — USB PnP Sound Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.10-22.50.25:512][728]LogInit: FAudioDevice initialized.
+[2018.03.10-22.50.25:544][728]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.03.10-22.50.25:569][728]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.03.10-23.50.25
+[2018.03.10-22.50.25:572][728]LogWorld: Bringing up level for play took: 0.026014
+[2018.03.10-22.50.25:576][728]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject -0.609
+[2018.03.10-22.50.25:577][728]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.52.30:113][119]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.52.30:166][119]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.52.59:547][136]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube56)
+[2018.03.10-22.53.00:194][183]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube56)
+[2018.03.10-22.53.00:983][252]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube56)
+[2018.03.10-22.53.02:164][354]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight4)
+[2018.03.10-22.53.03:704][473]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight8)
+[2018.03.10-22.53.04:709][553]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube56)
+[2018.03.10-22.53.05:659][628]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight7)
+[2018.03.10-22.53.06:730][707]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight6)
+[2018.03.10-22.53.08:322][830]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight4)
+[2018.03.10-22.53.09:319][909]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight8)
+[2018.03.10-22.53.10:335][984]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight7)
+[2018.03.10-22.54.02:715][440]LogMaterial: Warning: Material /Game/MojeTekstury/TexturesCom_TilesOrnate0210_3_seamless_Mat.TexturesCom_TilesOrnate0210_3_seamless_Mat needed to have new flag set bUsedWithStaticLighting !
+[2018.03.10-22.54.02:719][440]LogMaterial: Missing cached shader map for material TexturesCom_TilesOrnate0210_3_seamless_Mat, compiling. 
+[2018.03.10-22.55.13:763][776]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.10-22.55.13:795][776]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.55.13:795][776]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.10-22.55.13:795][776]PIE: New page: PIE session: VRProject (Mar 11, 2018, 12:55:13 AM)
+[2018.03.10-22.55.13:796][776]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
+[2018.03.10-22.55.13:841][776]LogPlayLevel: PIE: StaticDuplicateObject took: (0.045053s)
+[2018.03.10-22.55.13:842][776]LogAIModule: Creating AISystem for world VRProject
+[2018.03.10-22.55.13:842][776]LogPlayLevel: PIE: World Init took: (0.001328s)
+[2018.03.10-22.55.13:843][776]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.047110s)
+[2018.03.10-22.55.13:873][776]LogInit: XAudio2 using 'Głośniki (3 — USB PnP Sound Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.10-22.55.13:886][776]LogInit: FAudioDevice initialized.
+[2018.03.10-22.55.13:920][776]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.03.10-22.55.13:946][776]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.03.10-23.55.13
+[2018.03.10-22.55.13:949][776]LogWorld: Bringing up level for play took: 0.028158
+[2018.03.10-22.55.13:953][776]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject -0.233
+[2018.03.10-22.55.13:953][776]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.56.35:214][100]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.56.35:267][100]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.56.41:331][602]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight7)
+[2018.03.10-22.56.42:708][713]Cmd: DELETE
+[2018.03.10-22.56.42:708][713]Cmd: ACTOR DELETE
+[2018.03.10-22.56.42:721][713]LogEditorActor: Deleted Actor: SpotLight
+[2018.03.10-22.56.42:743][713]LogEditorActor: Deleted 1 Actors (0.035 secs)
+[2018.03.10-22.56.44:374][879]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight6)
+[2018.03.10-22.56.44:481][880]Cmd: DELETE
+[2018.03.10-22.56.44:481][880]Cmd: ACTOR DELETE
+[2018.03.10-22.56.44:493][880]LogEditorActor: Deleted Actor: SpotLight
+[2018.03.10-22.56.44:519][880]LogEditorActor: Deleted 1 Actors (0.039 secs)
+[2018.03.10-22.56.45:460][985]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight8)
+[2018.03.10-22.56.45:498][985]Cmd: DELETE
+[2018.03.10-22.56.45:498][985]Cmd: ACTOR DELETE
+[2018.03.10-22.56.45:511][985]LogEditorActor: Deleted Actor: SpotLight
+[2018.03.10-22.56.45:532][985]LogEditorActor: Deleted 1 Actors (0.033 secs)
+[2018.03.10-22.56.47:859][227]LogEditorViewport: Clicking Background
+[2018.03.10-22.56.48:961][341]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight4)
+[2018.03.10-22.56.57:350][999]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.10-22.56.57:378][999]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.56.57:378][999]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.10-22.56.57:378][999]PIE: New page: PIE session: VRProject (Mar 11, 2018, 12:56:57 AM)
+[2018.03.10-22.56.57:379][999]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
+[2018.03.10-22.56.57:414][999]LogPlayLevel: PIE: StaticDuplicateObject took: (0.035589s)
+[2018.03.10-22.56.57:415][999]LogAIModule: Creating AISystem for world VRProject
+[2018.03.10-22.56.57:415][999]LogPlayLevel: PIE: World Init took: (0.000869s)
+[2018.03.10-22.56.57:416][999]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.036945s)
+[2018.03.10-22.56.57:440][999]LogInit: XAudio2 using 'Głośniki (3 — USB PnP Sound Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.10-22.56.57:452][999]LogInit: FAudioDevice initialized.
+[2018.03.10-22.56.57:485][999]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.03.10-22.56.57:510][999]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.03.10-23.56.57
+[2018.03.10-22.56.57:512][999]LogWorld: Bringing up level for play took: 0.025473
+[2018.03.10-22.56.57:515][999]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject -0.671
+[2018.03.10-22.56.57:515][999]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.57.06:970][783]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.57.07:021][783]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.57.24:349][512]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight5)
+[2018.03.10-22.57.25:292][589]Cmd: DELETE
+[2018.03.10-22.57.25:292][589]Cmd: ACTOR DELETE
+[2018.03.10-22.57.25:305][589]LogEditorActor: Deleted Actor: SpotLight
+[2018.03.10-22.57.25:328][589]LogEditorActor: Deleted 1 Actors (0.036 secs)
+[2018.03.10-22.57.35:365][678]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight3)
+[2018.03.10-22.57.45:051][439]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube54)
+[2018.03.10-22.57.49:341][806]Cmd: TRANSACTION UNDO
+[2018.03.10-22.57.49:341][806]LogEditorTransaction: Undo Move Actors
+[2018.03.10-22.57.49:358][806]LogMaterial: Missing cached shader map for material TexturesCom_MarbleBase0045_2_M_Mat, compiling. 
+[2018.03.10-22.57.52:469][930]MaterialEditorStats: Base pass shader: 149 instructions
+[2018.03.10-22.57.52:469][930]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 222 instructions
+[2018.03.10-22.57.52:469][930]MaterialEditorStats: Vertex shader: 87 instructions
+[2018.03.10-22.57.52:469][930]MaterialEditorStats: Texture samplers: 3/16
+[2018.03.10-22.57.52:469][930]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2018.03.10-22.57.53:671][ 33]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube57)
+[2018.03.10-22.57.54:708][123]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight4)
+[2018.03.10-22.58.30:413][  8]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.10-22.58.30:441][  8]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.58.30:441][  8]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.10-22.58.30:441][  8]PIE: New page: PIE session: VRProject (Mar 11, 2018, 12:58:30 AM)
+[2018.03.10-22.58.30:442][  8]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_VRProject
+[2018.03.10-22.58.30:477][  8]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034753s)
+[2018.03.10-22.58.30:478][  8]LogAIModule: Creating AISystem for world VRProject
+[2018.03.10-22.58.30:478][  8]LogPlayLevel: PIE: World Init took: (0.001013s)
+[2018.03.10-22.58.30:478][  8]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VRProject.VRProject to /Game/UEDPIE_0_VRProject.VRProject (0.036280s)
+[2018.03.10-22.58.30:506][  8]LogInit: XAudio2 using 'Głośniki (3 — USB PnP Sound Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.10-22.58.30:518][  8]LogInit: FAudioDevice initialized.
+[2018.03.10-22.58.30:554][  8]LogLoad: Game class is 'FirstPersonGameMode_C'
+[2018.03.10-22.58.30:577][  8]LogWorld: Bringing World /Game/UEDPIE_0_VRProject.VRProject up for play (max tick rate 0) at 2018.03.10-23.58.30
+[2018.03.10-22.58.30:579][  8]LogWorld: Bringing up level for play took: 0.023450
+[2018.03.10-22.58.30:581][  8]PIE: Play in editor start time for /Game/UEDPIE_0_VRProject 0.396
+[2018.03.10-22.58.30:582][  8]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.58.55:019][353]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-22.58.55:063][353]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VRProject.VRProject:PersistentLevel' has LevelScriptBlueprint '/Game/VRProject.VRProject:PersistentLevel.VRProject' with GeneratedClass '/Game/VRProject.VRProject_C' with ClassGeneratedBy '/Game/VRProject.VRProject:PersistentLevel.VRProject'
+[2018.03.10-23.00.22:304][962]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="C:/Users/Goof/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto7.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2018.03.10-23.00.23:367][962]LogSavePackage: Save=941.80ms
+[2018.03.10-23.00.23:367][962]LogSavePackage: Moving 'C:/Users/Goof/Documents/GitHub/VR/Saved/VRProject_Auto7F955E0894C51052E24DCDD90C2EC2BE8.tmp' to 'C:/Users/Goof/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto7.umap'
+[2018.03.10-23.00.23:369][962]LogSavePackage: Display: Finished SavePackage C:/Users/Goof/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_Auto7.umap
+[2018.03.10-23.00.23:371][962]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VRProject' took 1.098
+[2018.03.10-23.00.23:371][962]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.098
+[2018.03.10-23.00.23:374][962]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/VRProject_BuiltData] ([1] browsable assets)...
+[2018.03.10-23.00.23:374][962]OBJ SavePackage: Finished generating thumbnails for package [/Game/VRProject_BuiltData]
+[2018.03.10-23.00.23:374][962]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject_BuiltData" FILE="C:/Users/Goof/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_BuiltData_Auto7.uasset" SILENT=false AUTOSAVING=true
+[2018.03.10-23.00.23:728][962]LogSavePackage: Save=111.45ms
+[2018.03.10-23.00.23:728][962]LogSavePackage: Moving 'C:/Users/Goof/Documents/GitHub/VR/Saved/VRProject_BuiltData_Auto73600958749EEFE94E6BA37837A42549D.tmp' to 'C:/Users/Goof/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_BuiltData_Auto7.uasset'
+[2018.03.10-23.00.23:730][962]LogSavePackage: Display: Finished SavePackage C:/Users/Goof/Documents/GitHub/VR/Saved/Autosaves/Game/VRProject_BuiltData_Auto7.uasset
+[2018.03.10-23.00.23:730][962]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MojeMaterialy/skrzyniaWieko] ([1] browsable assets)...
+[2018.03.10-23.00.23:762][962]OBJ SavePackage:     Rendered thumbnail for [Material /Game/MojeMaterialy/skrzyniaWieko.skrzyniaWieko]
+[2018.03.10-23.00.23:762][962]OBJ SavePackage: Finished generating thumbnails for package [/Game/MojeMaterialy/skrzyniaWieko]
+[2018.03.10-23.00.23:762][962]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MojeMaterialy/skrzyniaWieko" FILE="C:/Users/Goof/Documents/GitHub/VR/Saved/Autosaves/Game/MojeMaterialy/skrzyniaWieko_Auto7.uasset" SILENT=false AUTOSAVING=true
+[2018.03.10-23.00.23:887][962]LogSavePackage: Save=21.05ms
+[2018.03.10-23.00.23:887][962]LogSavePackage: Moving 'C:/Users/Goof/Documents/GitHub/VR/Saved/skrzyniaWieko_Auto7B540BDAF47D18FE00AC7EF9FC0EE8EFF.tmp' to 'C:/Users/Goof/Documents/GitHub/VR/Saved/Autosaves/Game/MojeMaterialy/skrzyniaWieko_Auto7.uasset'
+[2018.03.10-23.00.23:891][962]LogSavePackage: Display: Finished SavePackage C:/Users/Goof/Documents/GitHub/VR/Saved/Autosaves/Game/MojeMaterialy/skrzyniaWieko_Auto7.uasset
+[2018.03.10-23.00.23:892][962]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/MojeTekstury/TexturesCom_TilesOrnate0210_3_seamless_Mat] ([1] browsable assets)...
+[2018.03.10-23.00.23:892][962]OBJ SavePackage: Finished generating thumbnails for package [/Game/MojeTekstury/TexturesCom_TilesOrnate0210_3_seamless_Mat]
+[2018.03.10-23.00.24:004][962]LogSavePackage: Save=3.89ms
+[2018.03.10-23.00.24:004][962]LogSavePackage: Moving 'C:/Users/Goof/Documents/GitHub/VR/Saved/TexturesCom_TilesOrnate0210_3_seA7B20AB64DC60FD68031FB81D9B6D5D4.tmp' to 'C:/Users/Goof/Documents/GitHub/VR/Saved/Autosaves/Game/MojeTekstury/TexturesCom_TilesOrnate0210_3_seamless_Mat_Auto7.uasset'
+[2018.03.10-23.00.24:004][962]LogSavePackage: Display: Finished SavePackage C:/Users/Goof/Documents/GitHub/VR/Saved/Autosaves/Game/MojeTekstury/TexturesCom_TilesOrnate0210_3_seamless_Mat_Auto7.uasset
+[2018.03.10-23.00.24:005][962]LogFileHelpers: Auto-saving content packages took 0.632
+[2018.03.10-23.00.39:335][168]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube28)
+[2018.03.10-23.01.06:743][358]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="C:/Users/Goof/Documents/GitHub/VR/Content/VRProject.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.03.10-23.01.07:813][358]LogSavePackage: Save=948.86ms
+[2018.03.10-23.01.07:814][358]LogSavePackage: Moving 'C:/Users/Goof/Documents/GitHub/VR/Saved/VRProject870FAF484D8978BFEAAE128E89CABB05.tmp' to 'C:/Users/Goof/Documents/GitHub/VR/Content/VRProject.umap'
+[2018.03.10-23.01.07:817][358]LogSavePackage: Display: Finished SavePackage C:/Users/Goof/Documents/GitHub/VR/Content/VRProject.umap
+[2018.03.10-23.01.07:873][358]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject_BuiltData" FILE="C:/Users/Goof/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset" SILENT=true
+[2018.03.10-23.01.08:544][358]LogSavePackage: Save=575.24ms
+[2018.03.10-23.01.08:544][358]LogSavePackage: Moving 'C:/Users/Goof/Documents/GitHub/VR/Saved/VRProject_BuiltData16B1422A4790F97B3AFE1CB5A1D273E8.tmp' to 'C:/Users/Goof/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset'
+[2018.03.10-23.01.08:547][358]LogSavePackage: Display: Finished SavePackage C:/Users/Goof/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset
+[2018.03.10-23.01.37:622][555]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject" FILE="C:/Users/Goof/Documents/GitHub/VR/Content/VRProject.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.03.10-23.01.38:680][555]LogSavePackage: Save=923.85ms
+[2018.03.10-23.01.38:680][555]LogSavePackage: Moving 'C:/Users/Goof/Documents/GitHub/VR/Saved/VRProjectE55ADC634CC4BE909DCD609387FDE189.tmp' to 'C:/Users/Goof/Documents/GitHub/VR/Content/VRProject.umap'
+[2018.03.10-23.01.38:684][555]LogSavePackage: Display: Finished SavePackage C:/Users/Goof/Documents/GitHub/VR/Content/VRProject.umap
+[2018.03.10-23.01.38:734][555]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRProject_BuiltData" FILE="C:/Users/Goof/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset" SILENT=true
+[2018.03.10-23.01.39:401][555]LogSavePackage: Save=564.36ms
+[2018.03.10-23.01.39:401][555]LogSavePackage: Moving 'C:/Users/Goof/Documents/GitHub/VR/Saved/VRProject_BuiltData550F643B48ECDD522145DE8C8E8379EA.tmp' to 'C:/Users/Goof/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset'
+[2018.03.10-23.01.39:405][555]LogSavePackage: Display: Finished SavePackage C:/Users/Goof/Documents/GitHub/VR/Content/VRProject_BuiltData.uasset
+[2018.03.10-23.02.04:261][842]MapCheck: New page: Map Check
+[2018.03.10-23.02.04:272][842]Cmd: MAP REBUILD ALLVISIBLE
+[2018.03.10-23.02.04:272][842]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2018.03.10-23.02.04:413][842]LightingResults: New page: Lighting Build - Mar 11, 2018, 1:02:04 AM
+[2018.03.10-23.02.04:426][842]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2018.03.10-23.02.04:429][842]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2018.03.10-23.02.04:429][842]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2018.03.10-23.02.04:430][842]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2018.03.10-23.02.04:430][842]LogSwarmInterface: [TryOpenConnection] Local Process ID is 15180
+[2018.03.10-23.02.08:945][842]LogStaticLightingSystem: Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2018.03.10-23.02.08:946][842]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2018.03.10-23.02.08:946][842]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2018.03.10-23.02.08:946][842]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2018.03.10-23.02.08:946][842]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2018.03.10-23.02.08:946][842]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2018.03.10-23.02.09:099][842]LogEditorBuildUtils: Build time 0:04
+[2018.03.10-23.02.09:112][842]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer TexturesCom_TilesOrnate0210_3_seamless_Mat, compiling. 
+[2018.03.10-23.02.09:122][842]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer TexturesCom_TilesOrnate0210_3_seamless_Mat, compiling. 
+[2018.03.10-23.02.09:160][843]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer skrzyniaWieko, compiling. 
+[2018.03.10-23.02.09:173][843]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer skrzyniaWieko, compiling. 
+[2018.03.10-23.02.21:291][298]LightingResults: Warning: biurko Object has overlapping UVs.
+[2018.03.10-23.02.21:291][298]LightingResults: biurko Lightmap UV are overlapping by 1.2%. Please adjust content - Enable Error Coloring to visualize.
+[2018.03.10-23.02.39:727][397]Job is a success!
+[2018.03.10-23.02.40:123][398]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.012s
+[2018.03.10-23.02.40:123][398]LogVolumetricLightmapImport:      Indirection Texture 16x16x16 = 0.0Mb
+[2018.03.10-23.02.40:123][398]LogVolumetricLightmapImport:      BrickData 35x5x5 = 0.0Mb
+[2018.03.10-23.02.40:123][398]LogVolumetricLightmapImport:      Bricks at Level
+[2018.03.10-23.02.40:123][398]LogVolumetricLightmapImport:          0: 14.3% covering 100.0% of volume
+[2018.03.10-23.02.40:123][398]LogVolumetricLightmapImport:          1: 85.7% covering 9.4% of volume
+[2018.03.10-23.02.40:123][398]LogVolumetricLightmapImport:          2: 0.0% covering 0.0% of volume
+[2018.03.10-23.02.41:981][398]LogTexture: Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 1024X1024)
+[2018.03.10-23.02.41:982][398]LogTexture: Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 256X256)
+[2018.03.10-23.02.41:982][398]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 1024X1024)
+[2018.03.10-23.02.41:982][398]LogTexture: Display: Building textures: LQ_Lightmap_0_2 (DXT1, 256X256)
+[2018.03.10-23.02.41:982][398]LogTexture: Display: Building textures: HQ_Lightmap0_3 (AutoDXT, 1024X1024)
+[2018.03.10-23.02.41:982][398]LogTexture: Display: Building textures: LQ_Lightmap_0_3 (DXT1, 1024X1024)
+[2018.03.10-23.02.42:055][398]LogTexture: Display: Building textures: ShadowMapTexture2D_1 (G8, 1024X128)
+[2018.03.10-23.02.42:085][398]Lightmass on GOOFY: 29.3 sec total, 207 ms importing, 104 ms setup, 3.08 sec photons, 25.9 sec processing, 0 ms extra exporting [203/203 mappings]. Threads: 3:01 min total, 2:09 min processing.
+[2018.03.10-23.02.42:141][398]LogStaticLightingSystem: Illumination: 37.3 sec (1.66 sec encoding lightmaps, 70 ms encoding shadowmaps)
+[2018.03.10-23.02.42:141][398]LogStaticLightingSystem: Lightmap texture memory:  4.1 MB (4.0 MB streaming, 0.1 MB non-streaming), 6 textures
+[2018.03.10-23.02.42:141][398]LogStaticLightingSystem: Shadowmap texture memory: 0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 1 textures
+[2018.03.10-23.02.42:963][398]DumpUnbuiltLightIteractions
+[2018.03.10-23.02.42:963][398]Lights with unbuilt interactions: 0
+[2018.03.10-23.02.42:963][398]
+[2018.03.10-23.02.42:963][398]Primitives with unbuilt interactions: 0
+[2018.03.10-23.02.42:988][399]Cmd: MAP CHECK NOTIFYRESULTS
+[2018.03.10-23.02.42:989][399]MapCheck: New page: VRProject - Mar 11, 2018, 1:02:42 AM
+[2018.03.10-23.02.42:990][399]MapCheck: Error: Cube10_98 Cube10_98 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:990][399]MapCheck: Error: Cube11 Cube11 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:991][399]MapCheck: Error: Cube12_128 Cube12_128 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:991][399]MapCheck: Error: Cube14 Cube14 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:991][399]MapCheck: Error: Cube15 Cube15 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:991][399]MapCheck: Error: Cube17 Cube17 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:992][399]MapCheck: Error: Cube18 Cube18 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:992][399]MapCheck: Error: Cube19 Cube19 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:992][399]MapCheck: Error: Cube20 Cube20 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:992][399]MapCheck: Error: Cube21_179 Cube21_179 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:993][399]MapCheck: Error: Cube23 Cube23 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:993][399]MapCheck: Error: Cube24 Cube24 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:993][399]MapCheck: Error: Cube25 Cube25 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:994][399]MapCheck: Error: Cube26 Cube26 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:994][399]MapCheck: Error: Cube27 Cube27 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:994][399]MapCheck: Error: Cube28 Cube28 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:995][399]MapCheck: Error: Cube29 Cube29 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:995][399]MapCheck: Error: Cube2_29 Cube2_29 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:995][399]MapCheck: Error: Cube30 Cube30 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:995][399]MapCheck: Error: Cube31 Cube31 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:996][399]MapCheck: Error: Cube32 Cube32 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:996][399]MapCheck: Error: Cube33 Cube33 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:996][399]MapCheck: Error: Cube34 Cube34 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:996][399]MapCheck: Error: Cube35_2 Cube35_2 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:997][399]MapCheck: Error: Cube36 Cube36 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:997][399]MapCheck: Error: Cube37 Cube37 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:997][399]MapCheck: Error: Cube38 Cube38 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:997][399]MapCheck: Error: Cube39 Cube39 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:998][399]MapCheck: Error: Cube3_31 Cube3_31 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:998][399]MapCheck: Error: Cube4_33 Cube4_33 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:998][399]MapCheck: Error: Cube5 Cube5 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:999][399]MapCheck: Error: Cube59 Cube59 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:999][399]MapCheck: Error: Cube60 Cube60 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:999][399]MapCheck: Error: Cube61 Cube61 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.42:999][399]MapCheck: Error: Cube62 Cube62 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:000][399]MapCheck: Error: Cube63 Cube63 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:000][399]MapCheck: Error: Cube64 Cube64 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:000][399]MapCheck: Error: Cube65 Cube65 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:000][399]MapCheck: Error: Cube66 Cube66 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:000][399]MapCheck: Error: Cube6_39 Cube6_39 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:001][399]MapCheck: Error: Cube7 Cube7 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:001][399]MapCheck: Error: Cube8 Cube8 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:001][399]MapCheck: Error: Cube9 Cube9 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:001][399]MapCheck: Error: Cube_27 Cube_27 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:002][399]MapCheck: Error: Floor10 Floor10 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:002][399]MapCheck: Error: Floor2 Floor2 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:002][399]MapCheck: Error: Floor4 Floor4 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:002][399]MapCheck: Error: Floor6 Floor6 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:003][399]MapCheck: Error: Floor7 Floor7 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:003][399]MapCheck: Error: Floor8 Floor8 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:003][399]MapCheck: Error: Floor9 Floor9 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:003][399]MapCheck: Error: Floor_89 Floor_89 : Invalid DrawScale/DrawScale3D 
+[2018.03.10-23.02.43:008][399]MapCheck: Warning: ChestTop_2170 Static mesh actor has NULL StaticMesh property 
+[2018.03.10-23.02.43:009][399]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
+[2018.03.10-23.02.43:009][399]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
+[2018.03.10-23.02.43:009][399]MapCheck: Warning: RotationLock_356 'symbol1Fixed' has simple collision but is being scaled non-uniformly - collision creation will fail 
+[2018.03.10-23.02.43:183][399]MapCheck: Map check complete: 52 Error(s), 4 Warning(s), took 193.959ms to complete.
